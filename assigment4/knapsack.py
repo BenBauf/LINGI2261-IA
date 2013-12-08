@@ -10,6 +10,7 @@ class Knapsack(Problem):
     number=0
     step=0
     allObjects=((1,1,1),(2,2,2),(3,3,3),(4,4,4),(5,5,5),(6,6,6),(7,7,7))
+    sumUtility=0
     
     def __init__(self,path):
         self.max_size=40
@@ -18,7 +19,7 @@ class Knapsack(Problem):
 
     
     def goal_test(self, state):
-        return self.step > 2
+        return self.step > 10
 
         
     def successor(self, state):
@@ -26,18 +27,23 @@ class Knapsack(Problem):
         if(state[0]=='init'):
             state=state[1]
         available=state[1]
+        utility=state[2][0]
         #add
         for object in available:
             sleigh=list(state[0])
             notinSleigh=list(available)
             notinSleigh.remove(object)
-            sleigh.append(object)
-  
-            yield('add',(tuple(sleigh),tuple(notinSleigh),(self.step,0)))
+            sleigh.append(object)  
+            yield('add',(tuple(sleigh),tuple(notinSleigh),(utility+object[2],0)))
+        #remove
+        sleigh=list(state[0])
+        for object in sleigh:
+            sleigh=list(state[0])
+            notinSleigh=list(available)
+            sleigh.remove(object)
+            notinSleigh.append(object)
+            yield('remove',(tuple(sleigh),tuple(notinSleigh),(utility-object[2],0)))
 
-    #def path_cost(self, c, state1, action, state2):
-    #    newObject=list(state2[0]).pop()
-    #    return c+newObject[0]
 
     def Heuristique(self,node):
         state=node.state
@@ -45,13 +51,15 @@ class Knapsack(Problem):
             state=state[1]
         if(len(state[0]) is 0):
             return 0
-        newObject=list(state[0]).pop()
-        return newObject[0]
+        #newObject=list(state[0]).pop()
+        #return self.sumUtility-newObject[2]
+        return self.sumUtility-state[2][0]
 
 
     #read the file, create the list and code it for the state schema
     def createMap(self,path):
         allObjects=[]
+        sum=0
         
         f = open(path,'r')
         ligne=-1
@@ -67,14 +75,10 @@ class Knapsack(Problem):
                     if len(char)>0:
                         object.append(int(char))
                 allObjects.append(tuple(object))
-
+                sum+=object[2]
+                
+        self.sumUtility=sum
         self.allObjects=tuple(allObjects)
-##            info=line.split(' ')
-##            print(info)
-##            if(len(info) is 4):
-##                print(info)
-##                object=(int(info[1]),int(info[2]),int(info[3].replace('\n', '')))
-##                print(object)
          
         
     
@@ -90,5 +94,12 @@ node=astar_graph_search(problem, problem.Heuristique)
 #example of print
 path=node.path()
 path.reverse()
-for n in path:
-    print(n)
+n=path.pop()
+print(n.state[0])
+##path.reverse()
+##for n in path:
+##    state=n.state
+##    if state[0]=="init":
+##        state=state[1]
+##    print(state[0])
+##    #print(state)
