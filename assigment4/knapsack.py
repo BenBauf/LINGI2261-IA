@@ -19,7 +19,7 @@ class Knapsack(Problem):
 
     
     def goal_test(self, state):
-        return self.step > 10
+        return self.step > 100
 
         
     def successor(self, state):
@@ -27,14 +27,15 @@ class Knapsack(Problem):
         if(state[0]=='init'):
             state=state[1]
         available=state[1]
-        utility=state[2][0]
+        utility , weight=state[2]
         #add
         for object in available:
             sleigh=list(state[0])
             notinSleigh=list(available)
             notinSleigh.remove(object)
-            sleigh.append(object)  
-            yield('add',(tuple(sleigh),tuple(notinSleigh),(utility+object[2],0)))
+            sleigh.append(object)
+            if weight+object[1]<= self.max_size:
+                yield('add',(tuple(sleigh),tuple(notinSleigh),(utility+object[2],weight+object[1])))
         #remove
         sleigh=list(state[0])
         for object in sleigh:
@@ -42,9 +43,10 @@ class Knapsack(Problem):
             notinSleigh=list(available)
             sleigh.remove(object)
             notinSleigh.append(object)
-            yield('remove',(tuple(sleigh),tuple(notinSleigh),(utility-object[2],0)))
+            if weight-object[1]<= self.max_size:
+                yield('remove',(tuple(sleigh),tuple(notinSleigh),(utility-object[2],weight-object[1])))
 
-
+    
     def Heuristique(self,node):
         state=node.state
         if(state[0]=='init'):
