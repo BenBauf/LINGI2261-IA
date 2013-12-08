@@ -7,11 +7,13 @@ from search import *
 
 class Knapsack(Problem):
     max_size=0
+    number=0
     step=0
     allObjects=((1,1,1),(2,2,2),(3,3,3),(4,4,4),(5,5,5),(6,6,6),(7,7,7))
     
     def __init__(self,path):
         self.max_size=40
+        self.createMap(path)
         self.initial=('init',((),self.allObjects,(0,0)))
 
     
@@ -45,6 +47,34 @@ class Knapsack(Problem):
             return 0
         newObject=list(state[0]).pop()
         return newObject[0]
+
+
+    #read the file, create the list and code it for the state schema
+    def createMap(self,path):
+        allObjects=[]
+        
+        f = open(path,'r')
+        ligne=-1
+        for line in f:
+            ligne+=1
+            object=[]
+            if(ligne is 0):
+                self.number=int(line)
+            elif(ligne > self.number):
+                self.max_size=int(line)
+            else:
+                for char in line.split(' '):
+                    if len(char)>0:
+                        object.append(int(char))
+                allObjects.append(tuple(object))
+
+        self.allObjects=tuple(allObjects)
+##            info=line.split(' ')
+##            print(info)
+##            if(len(info) is 4):
+##                print(info)
+##                object=(int(info[1]),int(info[2]),int(info[3].replace('\n', '')))
+##                print(object)
          
         
     
@@ -54,7 +84,7 @@ class Knapsack(Problem):
 
 ###################### Launch the search #########################
         
-problem=Knapsack("test")
+problem=Knapsack("knapsack_instances/knapsack_instances/knapsack0.txt")
 #node=depth_first_tree_search(problem)
 node=astar_graph_search(problem, problem.Heuristique)
 #example of print
