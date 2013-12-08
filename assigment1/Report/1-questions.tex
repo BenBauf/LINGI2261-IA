@@ -1,0 +1,23 @@
+\begin{description}
+\item[Question 1]: In order to perform a search, what are the classes that you must define or extend? What are they used for? \newline
+You have to extend problem class. This new class must implement at least the following methods : 
+	\begin{itemize}
+		\item init: the objective of this method is to initialize the problem environment. In our case, we build the map at the beginning of the game.
+		\item successor: this method will return all the possible new actions, given by the problem rules, from a single state. The idea behind this function is to evaluate all the next states reachable from the current state.
+		\item goal$\_$test: this method is able to check if a state reaches the goal of the problem.
+		\item path$\_$cost: the objective of this method is to compute the cost from one state to another.
+	\end{itemize}
+\item[Question 2]: in the expand method of the class Node what is the advantage of using a yield instead of building a list and returning it afterwards? \newline
+The yield instruction is using the call-by-need strategy to delay variable initialisation to the moment the program need access to it. The advantage is a reduced space used by the program.
+\item[Question 3]: both breadth$\_$first$\_$graph$\_$search and depth$\_$first$\_$graph$\_$search are making a
+call to the same function. How is their fundamental difference implemented? \newline
+The main difference can be seen in the data structure used to look over the nodes. In breadth$\_$first$\_$graph$\_$search, the data structure is first-in first-out queue. The order to run through different nodes is level per level. In depth$\_$first$\_$graph$\_$search, the data structure is a simple stack. The order will be very different because the program always evaluate the successor of the last state computed. It will work more deeply than in terms of level.
+\item[Question 4]: what is the difference between the implementation of the graph$\_$search and the tree$\_$search methods? What is the special structure used in graph$\_$search but not in tree$\_$search; what is it used for; and how is it implemented?
+The main difference between tree search and graph search is the permission to make repetition. The graph search avoid them, using a list to keep all states already stored.
+\item[Question 5]: what is the programming technique used to obtain a new node in the expand method of the Node class? \newline
+It's the lazy evaluation. As explained in question 2, it delays the evaluation of an expression to the moment it needs it. 
+\item[Question 6]: how technically can you use the implementation of the closed list to deal with symmetrical states ? (hint: if two symmetrical states are considered to be the same, they will not be visited twice) \newline
+A clever way to solve this problem can be summarized in storing states avoiding symmetrical problem. In other words, you have to store informations in a formal way. For example, in the koutack problem, we can store a tuple with the action as first element and then all the letters in the alphabetical order.
+\item[Question 7]: what is the method used to get the path from the root to the solution Node you have found? Explain how this path is built starting from a solution Node.
+A node knows only his parent. The implementation just iterates over nodes from solution to parent until root is reached. Now, we have a way from solution to root, stored as a list. But, the goal is to have a way from root to solution, showing the right sequence of actions to reach the objective. To obtain this sequence, we just need to reverse this list, using reverse method from list class.
+\end{description} 

@@ -1,0 +1,31 @@
+
+\usepackage[pdftitle={IA-Assignement2},  % apparition ds les propriétés du doc
+            pdfauthor={Groupe 1},
+            pdfsubject={Artificial Intelligence - Second Assignement},
+            pdfkeywords={ia},
+	    colorlinks=false,
+	    linkcolor=webdarkblue, 
+	    filecolor=webblue, 
+	    urlcolor=webdarkblue,
+	    citecolor=webgreen]{hyperref}     % pour l'utilisation des liens http,...
+
+% Police
+   \renewcommand\familydefault{ptm}        % famille normale: Times ptm
+   %\renewcommand\rmdefault{phv}            % famille à utiliser pour du Roman (phv)
+   %\renewcommand\sfdefault{phv}            % famille à utiliser pour du Sans Serif
+
+% L'interligne
+   % \onehalfspacing % un et demi (= \setstrech{1.5} ou = \renewcommand{\baselinestretch}{1.5})
+   \renewcommand{\baselinestretch}{1.5}
+
+% En-tete
+    \lhead{\texttt{LINGI2261} - Artificial Intelligence : Second assignement}        \chead{}        \rhead{Groupe 1}
+    %\renewcommand{\headrulewidth}{0.5pt}     % pour l'épaisseur de la ligne
+
+% Bas de page
+    \renewcommand{\footrulewidth}{0.5pt}       % pour l'épaisseur de la ligne
+    \lfoot{Partie \rightmark}        \cfoot{}        \rfoot{Page \thepage~sur~\pageref*{LastPage}}
+
+% TOC jusqu'au subsection
+\setcounter{tocdepth}{2} % Dans la table des matieres
+\setcounter{secnumdepth}{2} % Avec un numero.

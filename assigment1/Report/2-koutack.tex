@@ -1,0 +1,130 @@
+Here are the answers to questions relative to the koutack problem. 
+\begin{description}
+\item [Question 1]: Explain the advantages and weaknesses of each search strategy on this problem (not in general): depth first, breadth first, depth limited, iterative deepening, uniform cost. \newline
+\begin{itemize}
+\item depth first : advantage of this search strategy is space used. This algorithm will keep in memory just one path. Completeness is reached in this case, because next depth in the search means that number of occupied squares decreased from one or more units. Completeness can be assimilated as an advantage. The most important weakness of this search strategy is that it can't ensure the optimal solution to be found and we need the shortest path to a solution. We can still use it, we know we'll find a solution if it exists.
+\item breadth first : this search strategy has the advantage of exploring all nodes of a level before going to the next one. Optimal solution will be found in the shortest time in front of all others search strategies. There is still a very important weakness that will dismiss this strategy to be used : the space used. Breadth first search keep the all tree in memory. For small cases, it's not a big deal and we can afford it. But as soon as the board grow a little, space used in memory climb to a very important size.
+\item depth limited : this strategy can't be used here because it can't even ensure to find a solution. The space advantage is better than in depth first search. But the completeness advantage of depth search (in this problem !) is cancelled because the limit couldn't be large enough to reach a solution.
+\item iterative deepening : this strategy combines advantages of depth first search and breadth first search. The only weakness here is the execution time. All the tree must be computed at all iterations of the limit depth. 
+\item uniform cost : this strategy is exactly the same as breadth first search if the cost is calculated in terms of 'move' on the board. Each move will cost one unity so there will be no benefit to compute it to change to order of the queue. It will be exactly the same as breadth first. If cost is computed in terms of number of occupied squares on the board combined with depth in the tree, it can be interessant to order the queue with the moves gathering more squares than others into the front.
+\end{itemize}
+\item[Question 2]: Are there equivalent (symmetrical) states in this problem? What are the potential consequences on the search? Is it possible to handle them in your program?\newline
+Yes, there are equivalent states. In our implementation, the algorithm build the tree in searching moves for all occupied squares. In a same state, if square 'a' can merge with square 'b', the opposite is true too. In the beginning of the development, we didn't see that mistake. The execution time was really important. We can handle them using a graph search. We implemented the action statement to sort the list of letters gathered on a square in the alphabetic order. The state for a move to gather 'a' and 'b', or 'b' and 'a', will be \textbf{('move' coord {'a','b'})}.
+\item[Question 3] : What are the advantages and disadvantages of using the tree and graph search for this problem. Which approach would you choose? Which approach allows you to avoid expending twice symmetrical states?\newline
+The problem with the tree search is that it allows symmetrical states. It doesn't keep a trace of all action made before in the tree. We chose graph search to avoid symmetrical states. We made the implementation accordingly to this choice as said in question above. 
+\item[Question 4]: Implement this problem in Python 3. Extend the Problem class and implement the necessary methods and other class(es) if necessary. Your file must be named koutack.py. You program must print to the standard output a solution to the problem satisfying the above format.\newline
+
+Utilisation : python3 koutack.py FILEPATH [SEARCHTYPE] \\
+Types de recherche disponibles :
+\begin{itemize}
+\item[1]: Graph - BFS
+\item[2]: Graph - DFS
+\item[3]: Tree - BFS
+\item[4]: Tree - DFS
+\end{itemize}
+\end{description}
+
+\lstinputlisting{./../koutack.py} 
+
+\begin{description}
+\item[Question 5]: Experiments must be realized with the 19 instances of the koutack problem provided. Report in a table the results on the 19 instances for depth-first and breadth- first strategies on both tree and graph search (4 settings). You must report the time, the number of explored nodes and the number of steps from root to solution. When no solution can be found by a strategy in a reasonable time (3 min), explain the reason (time-out and/or swap of the memory). \newline
+%Insert result tab here%
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack0} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.25 & 0.04 & 19.24 & 0.05\\ \textbf{Path to solution length} & 5 & 7 & 5 & 7 \\ \textbf{Explored Nodes} & 1066 & 8 & 137724 & 8\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack1} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.53 & 0.04 & 110.15 & 0.05\\ \textbf{Path to solution length} & 7 & 7 & 7 & 7 \\ \textbf{Explored Nodes} & 3634 & 12 & 1498271 & 18\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack2} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.43 & 0.06 & 21.19 & 0.05\\ \textbf{Path to solution length} & 5 & 7 & 5 & 7 \\ \textbf{Explored Nodes} & 1929 & 8 & 194321 & 8\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack3} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.20 & 0.06 & 30.71 & 0.06\\ \textbf{Path to solution length} & 7 & 8 & 7 & 8 \\ \textbf{Explored Nodes} & 1274 & 34 & 633101 & 188\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack4} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.38 & 0.08 & 46.33 & 1.19\\ \textbf{Path to solution length} & 6 & 7 & 6 & 7 \\ \textbf{Explored Nodes} & 1990 & 213 & 490811 & 30126\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack5} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 155.58 & 0.05  & Swap & 0.54\\ \textbf{Path to solution length} & 8 & 11  & Swap & 11 \\ \textbf{Explored Nodes} & 496111 & 125 & Swap & 14054\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack6} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 20.50 & 0.17 & Swap & 11.07\\ \textbf{Path to solution length} & 9 & 12 & Swap & 12 \\ \textbf{Explored Nodes} & 87429 & 1009 & Swap & 254675\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack7} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 195.46 & 0.07 & Swap & 1.42\\ \textbf{Path to solution length}& 9 & 11  & Swap & 11 \\ \textbf{Explored Nodes} & 761176 & 254  & Swap & 29961
+\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack8} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 15.61 & 0.74  & Swap & Time-out\\ \textbf{Path to solution length} & 8 & 12  & Swap & Time-out \\ \textbf{Explored Nodes} & 55383 & 5287 & Swap & Time-out\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutack9} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 107.48 & 0.06  & Swap & 0.07\\ \textbf{Path to solution length}& 8  & 9 & Swap & 9\\ \textbf{Explored Nodes}& 353479 & 37  & Swap & 314\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG2} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.04 & 0.06 & 0.05 & 0.04\\ \textbf{Path to solution length} & 2 & 2 & 2 & 2 \\ \textbf{Explored Nodes} & 8 & 2 & 25 & 2\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG3} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.07 & 0.04 & 0.05 & 0.04\\ \textbf{Path to solution length} & 4 & 4 & 4 & 4 \\ \textbf{Explored Nodes} & 26 & 9 & 175 & 12\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG4} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.06 & 0.06 & 0.07 & 0.06\\ \textbf{Path to solution length} & 4 & 4 & 4 & 4 \\ \textbf{Explored Nodes} & 54 & 4 & 481 & 4\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG5} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.06 & 0.04 & 0.61 & 0.04\\ \textbf{Path to solution length} & 5 & 6 & 5 & 6 \\ \textbf{Explored Nodes} & 134 & 23 & 7469 & 174\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG6} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.23 & 0.05 & 16.99 & 0.12\\ \textbf{Path to solution length} & 6 & 7 & 6 & 7 \\ \textbf{Explored Nodes} & 1582 & 58 & 257359 & 1497\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG7} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 8.87 & 0.05 & Swap & 0.04\\ \textbf{Path to solution length} & 7 & 8 & Swap & 8 \\ \textbf{Explored Nodes} & 44346 & 8 & Swap & 8\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG8} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.13 & 0.11 & 9.55 & 1.22\\ \textbf{Path to solution length} & 8 & 8 & 8 & 8 \\ \textbf{Explored Nodes} & 872 & 487 & 204767 & 28380\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG9} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.06 & 0.03 & 1.36 & 0.04\\ \textbf{Path to solution length} & 5 & 7 & 5 & 7 \\ \textbf{Explored Nodes} & 362 & 46 & 16471 & 476\\ 
+\hline 
+\end{tabular}\\
+\begin{tabular}{|c|c|c|c|c|} 
+\hline \textbf{koutackAG10} & \multicolumn{2}{|c|}{\textbf{Graph Search}} & \multicolumn{2}{|c|}{\textbf{Tree Search}} \\ \hline & \textbf{Breadth First} &  \textbf{Depth First} & \textbf{Breadth First} &  \textbf{Depth First}\\ 
+\hline \textbf{Time (s.)} & 0.76 & 0.05 & 104.10 & 0.06\\ \textbf{Path to solution length} & 6 & 8 & 6 & 8 \\ \textbf{Explored Nodes} & 4521 & 13 & 990516 & 31\\ 
+\hline 
+\end{tabular}
+\item[Question 6]: Imagine that a new ’split’ move is introduced. The split move is a kind of inverse move; it allows to split any pile onto the free positions around. The pile should contain at least two tiles and there should be at least two free positions around the pile (up, right, down, left). The tiles are evenly distributed on the free positions (using the order up, right, down, left). What would be the impact of such a modification on the different search strategies (depth first, breadth first, depth limited, iterative deepening, uniform cost)? Also, what would be the impact on the tree and graph search? \newline
+Splitting piles have advantages and disadvantages. First, the advantage is that it can solve problems that are impossible with the standard koutack problem. But, it brings in a real problem in our algorithm : the program can be stuck in a infinite loop. Imagine a pile of three tiles. It splits and put 2 tiles up. Then, the new pile splits again, putting last tile up. The tiles can gather and the result is a pile which stand one square up than at the beginning. If you do the same move down, you go back to start state. You can do this two moves infinitely. So we'll have to use search strategy that dooesn't suffer from completeness issue. Depth first search will be prohibited. The advantages and weaknesses of the others strategies are equivalent in the split case but the general complexity is increased because new moves are availables. The graph search will be a important choice here to avoid repetition in splits.
+\end{description}

@@ -1,0 +1,21 @@
+\input{header.tex}
+\input{entete-baspage-titre.tex}
+\usepackage{lipsum}
+\begin{document}
+\input{title.tex}
+
+%{\setlength{\baselineskip}{1.15\baselineskip}	% Pour l'illusion d'avoir écrit plus...
+
+\tableofcontents
+\thispagestyle{empty}	% pour enlever le numéro de page
+\newpage
+\pagenumbering{arabic} % on triche avec la numéroation des pages :)
+
+\section{Aima-Python3 questions}
+\input{1-questions.tex}
+\newpage
+\section{Koutack problem}
+\input{2-koutack.tex}
+
+
+\end{document}

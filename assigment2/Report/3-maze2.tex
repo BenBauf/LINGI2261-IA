@@ -1,0 +1,29 @@
+\begin{description}
+\item[Question 1]: \textit{Is your previous heuristic still adapted for this model ? }\\
+
+Yes, it is. It's a particular case of mazeCollect. In the first case, heuristic was whatever the current position was. In this case, heuristic is used only when current position stands on a dollar. Since we proved our heuristic for first case, it's exactly the same here.
+
+\item[Question 2]: \textit{Implement the second version of your solver. For this version, the moves considered in your successor function correspond to moving the player directly on one money item or on the safe. Extend the Problem class and implement the necessary methods and other class(es) if necessary. Your file must be named mazeCollect2.py. Your program must print to the standard output a solution to the mazeCollect instance for which the path to the instance file is given in argument. The solution must satisfy the described format. The moves in your solution must correspond to atomic moves of the player (up, right, down and left). }\\
+
+\end{description}
+\lstinputlisting{./../mazeCollect2.py} 
+\begin{description}
+
+\item[Question 3]: \textit{Experiment, compare and analyze the differences in performances of your first version of the solver and the second one on the 5 instances of mazeCollect inside Benchs\_Large. Report in a table the time, the number of explored nodes and the number of steps to reach the solution. When no solution can be found by a strategy in a reasonable time (say 3 min), explain the reason (time-out and/or swap of the memory). }\\
+
+The limit of 3 minuts was too short for our algorithm, all results for large maps lead to time out.
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline   & \multicolumn{3}{c|}{mazeCollect.py} & \multicolumn{3}{c|}{mazeCollect2.py} \\ 
+\hline Benchs\_Large & Time (s.) & Explored nodes & Steps & Time (s.) & Explored nodes & Steps \\ \hline 
+mazeCollect10 & TIMEOUT & $\bullet$ & $\bullet$ & TIMEOUT & $\bullet$ & $\bullet$\\
+mazeCollect11 & TIMEOUT & $\bullet$ & $\bullet$ & TIMEOUT & $\bullet$ & $\bullet$\\
+mazeCollect12 & TIMEOUT & $\bullet$ & $\bullet$ & TIMEOUT & $\bullet$ & $\bullet$\\
+mazeCollect13 & TIMEOUT & $\bullet$ & $\bullet$ & TIMEOUT & $\bullet$ & $\bullet$\\
+mazeCollect14 & TIMEOUT & $\bullet$ & $\bullet$ & TIMEOUT & $\bullet$ & $\bullet$\\
+\hline
+\end{tabular}\\
+
+\item[Question 4]: \textit{What is the problem when using breadth first graph search with this second version of the solver ?} \\
+In the second problem, the maximum depth of the tree is $k+1$, with $k$, number of dollars. The main difference with the first case is that the cost on a fixed level on the tree isn't constant. The BFS search will stop on the first node which reach goal, after taking all dollars, but it's not necessary an optimal one.
+
+
+\end{description} 

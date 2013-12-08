@@ -1,0 +1,9 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Scipion}{1}{section.0.1}
+\contentsline {section}{\numberline {2}Alpha-Beta search}{2}{section.0.2}
+\contentsline {section}{\numberline {3}Quoridor}{4}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}A basic Alpha-Beta agent}{4}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {3.2}Comparison of two evaluation functions}{4}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {3.3}Evaluation function}{4}{subsection.0.3.3}
+\contentsline {subsection}{\numberline {3.4}Successors functions}{5}{subsection.0.3.4}
+\contentsline {subsection}{\numberline {3.5}Cut-off function}{6}{subsection.0.3.5}
