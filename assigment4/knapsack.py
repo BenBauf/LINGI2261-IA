@@ -9,11 +9,10 @@ class Knapsack(Problem):
     max_size=0
     number=0
     step=0
-    allObjects=((1,1,1),(2,2,2),(3,3,3),(4,4,4),(5,5,5),(6,6,6),(7,7,7))
+    allObjects=()
     sumUtility=0
     
     def __init__(self,path):
-        self.max_size=40
         self.createMap(path)
         self.initial=('init',((),self.allObjects,(0,0)))
 
@@ -36,6 +35,7 @@ class Knapsack(Problem):
             sleigh.append(object)
             if weight+object[1]<= self.max_size:
                 yield('add',(tuple(sleigh),tuple(notinSleigh),(utility+object[2],weight+object[1])))
+        
         #remove
         sleigh=list(state[0])
         for object in sleigh:
@@ -43,8 +43,22 @@ class Knapsack(Problem):
             notinSleigh=list(available)
             sleigh.remove(object)
             notinSleigh.append(object)
-            if weight-object[1]<= self.max_size:
-                yield('remove',(tuple(sleigh),tuple(notinSleigh),(utility-object[2],weight-object[1])))
+            yield('remove',(tuple(sleigh),tuple(notinSleigh),(utility-object[2],weight-object[1])))
+
+        #replace
+        sleigh=list(state[0])
+        notin=list(available)
+        for object in sleigh:
+                        
+            for gift in notin:
+                sleigh=list(state[0])
+                notinSleigh=list(available)
+                if weight-object[1]+gift[1]<= self.max_size:
+                    sleigh.remove(object)
+                    notinSleigh.append(object)
+                    sleigh.append(gift)
+                    notinSleigh.remove(gift)
+                    yield('replace',(tuple(sleigh),tuple(notinSleigh),(utility-object[2]+gift[2],weight-object[1]+gift[1])))
 
     
     def Heuristique(self,node):
@@ -53,8 +67,6 @@ class Knapsack(Problem):
             state=state[1]
         if(len(state[0]) is 0):
             return 0
-        #newObject=list(state[0]).pop()
-        #return self.sumUtility-newObject[2]
         return self.sumUtility-state[2][0]
 
 
