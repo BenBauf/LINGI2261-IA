@@ -1,0 +1,202 @@
+\typeout{------------------------------------------------------------------}
+\typeout{} 
+\typeout{        Fichier de base modifie par : Matth: 20 nov 2012} 
+\typeout{                   sous licence GNU-GPL} 
+\typeout{}
+\typeout{------------------------------------------------------------------}
+
+% Classe générale du document
+   \documentclass[12pt]{report} % .10pt, 11pt, 12pt : taille de la police principale (10 par défaut)
+                 % .a4paper, letterpaper,... : délimite la taille du papier. (letterpaper par défaut)
+	         % .fleqn : aligne les formules mathématiques à gauche au lieu de les centrer.
+		 % .leqno : place la numérotation des formules à gauche plutôt qu'à droite.
+		 % .twocolumn : demande à LATEX de formater le texte sur deux colonnes.
+		 % .twoside, oneside indique si la sortie se fera en recto-verso ou en recto simple.
+		 % .landscape, mais il faut mettre en commentaire (ou modifier) toutes les dimmensions
+
+% Importation de packages divers
+%   \NeedsTeXFormat{LaTeX2e} 
+
+	\usepackage{enumerate}
+   \usepackage[T1]{fontenc}
+   \usepackage[utf8]{inputenc}		% utilisation des caractères 8 bits en Unix (codage ISO 8859-1)
+  %\usepackage[latin1]{inputenc}	% utilisation des caractères pour Linux2
+	\usepackage{color}
+   \usepackage{fancyhdr}
+   \usepackage{lastpage}
+                   % pour l'affichage du n° de la dernière page.
+   \usepackage{lmodern}
+   \usepackage{multirow}                % pour l'utilisation de figures ``noyées'' dans le texte
+   \usepackage{xspace}			% package pour babel
+   \usepackage[english]{babel}         % Utilisation du français (nom des sections, césure, ponctuation,...)
+   \usepackage{amsmath,amsthm,amssymb}  % Utilisation de certains packages de AMS (cf. belles équations)
+   \usepackage{endnotes}                % Pour l'utilisation des notes en fin de documents
+   \usepackage{verbatim}                % Pour l'insertion de fichier en mode verbatim
+   \usepackage{portland}		% pour l'utilisation de \portrait et de \landscape sur une page
+   \usepackage[pdftex]{graphicx}        % [pdftex] si utilisation d'images jgp,...
+                                        % [dvips]  si utilisation d'images bmp,...
+   \usepackage{pdfpages}		% Inclure des pages de pdf
+   \usepackage{setspace}		% Pour définir un interligne
+   \usepackage[bottom]{footmisc}        % Footnote at the bottom
+%   \usepackage[cyr]{aeguill}		% Pour les guillemets à la Française
+   \usepackage{eurosym}	
+   \usepackage{listings}
+\usepackage{url}
+\usepackage{setspace}
+\usepackage{todonotes}
+
+
+\usepackage{tikz}
+\usetikzlibrary{positioning,shadows,arrows}
+
+\urlstyle{sf}
+	
+   \renewcommand{\contentsname}{Summary} % si tableofcontents au début
+   \newcommand{\Numero}{\No}
+   \newcommand{\numero}{\no}
+%   \newcommand{\fup}[1]{\up{#1}}
+
+   \DeclareGraphicsExtensions{.jpg,.pdf,.mps,.png}       % déclaration d'extensions  pour les images
+   %\input xy                            % pour le package xy (construction de diagramme)
+   %\xyoption{all}
+
+% Dimensions de la page :       	
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  0
+  %   |                                  %
+  %---+----------------------------------%  1
+  %   | +----------------------------+   %  2
+  %   | |          en-tête           |   %
+  %   | +----------------------------+   %  3
+  %   | +----------------------------+   %  4
+  %   | |                            |   %       Remarques : 
+  %   | |                            |   %        . distance de '0' à '1' : un pouce + \voffset
+  %   | |                            |   %        . distance de 'a' à 'b' : un pouce + \hoffset
+  %   | |           texte            |   %
+  %   | |                            |   %
+  %   | |                            |   %
+  %   | |                            |   %
+  %   | +----------------------------+   %  5
+  %   | +----------------------------+   %
+  %   | |         bas de page        |   %
+  %   | +----------------------------+   %  6
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %a  b c                            d  e
+
+%    % général
+%      \voffset       0mm    % pour descendre (si positif) ou remonter (si négatif) le tout
+%      \hoffset       0mm    % pour agrandir (si positif) ou diminuer (si négatif) la marge gauche (distance 'a' 'b')
+      \oddsidemargin 2.5mm   % 5pt  % distance de 'b' à 'c'
+%     \evensidemargin 25mm  % 15pt % distance de 'd' à 'e'
+%    % texte
+%      \headsep       25pt   % distance de '3' à '4', la distance entre l'en-tête et le texte
+      \textheight    220mm  % distance de '4' à '5', pour déterminer la hauteur du texte
+      \textwidth     165mm  % distance de 'c' à 'd' 
+%    % en-tête
+      \topmargin     0pt    % distance de '1' à '2', pour descendre (si positif) ou remonter (si négatif) le tout
+      \headheight    15pt   % distance de '2' à '3', doit être > 14.49999
+%    % bas de page
+      \footskip      15mm   % 30pt % distance de '5' à '6', la distance entre le texte et le bas de page
+     % space for the footnode
+     \setlength{\skip\footins}{1cm}
+     
+% Mise en page
+   \pagestyle{fancy}
+%   \usepackage[Matth]{fncychap}
+
+% (Re)définitions diverses
+
+  % redéfinition de l'affichage des titres de section dans l'en-tête ou le bas de page
+    % remarques :
+    %  .affichage du numéro (2)    : \thesection 
+    %  .affichage du nom (Section) : \sectionname
+    \renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}   % 2.2. nom de la section 2.2
+    \renewcommand{\thesection}{\arabic{section}}		% II nom de la section 0.2
+
+
+  % des couleurs...                   (utilisation avec par ex. \textcolor{webdarkblue}{...})
+   \definecolor{codeBlue}{rgb}{0,0,1}
+   \definecolor{webred}{rgb}{0.5,0,0}
+   \definecolor{codeGreen}{rgb}{0,0.5,0}
+   \definecolor{codeGrey}{rgb}{0.6,0.6,0.6}
+   \definecolor{webdarkblue}{rgb}{0,0,0.4}
+   \definecolor{webgreen}{rgb}{0,0.3,0}
+   \definecolor{webblue}{rgb}{0,0,0.8}
+   \definecolor{orange}{rgb}{0.7,0.1,0.1}
+
+  % utilisation de caption, label,... pour autre chose qu'une figure
+        %%%% debut macro %%%%
+   \makeatletter
+   \def\captionof#1#2{{\def\@captype{#1}#2}}
+   \makeatother
+        %%%% fin macro %%%%
+
+
+% remarques : 
+%  . pour mettre la date                  : \today
+%  . pour mettre le nom de la section     : \rightmark
+%  . pour mettre le numéro de page        : \thepage
+%  . pour mettre le nombre de pages total : \pageref{LastPage}  (mais l'écrit en rouge vu que c'est une réf.)
+%  . insertion d'une image                : \setlength{\unitlength}{1mm}
+%                                             \begin{picture}(0,0)
+%                                                \put(5,0){\includegraphics[scale=x.x]{xxx.xxx}}
+%                                             \end{picture}
+
+% Pour les guillemets à  la Française
+\newcommand{\fermerguillemets}{\unskip\kern.15em\symbol{20}}
+\newcommand{\ouvrerguillemets}{\symbol{19}\ignorespaces\kern.15em}
+\let »=\fermerguillemets
+\let« =\ouvrerguillemets
+
+% Pour changer l'icone des puces : à placer juste avant une liste
+ %   \renewcommand\labelitemi{\textbullet}	% Style boulet :)
+ 
+ % pour python : 
+ \definecolor{Code}{rgb}{0,0,0}
+\definecolor{Decorators}{rgb}{0.5,0.5,0.5}
+\definecolor{Numbers}{rgb}{0.5,0,0}
+\definecolor{MatchingBrackets}{rgb}{0.25,0.5,0.5}
+\definecolor{Keywords}{rgb}{0,0,1}
+\definecolor{self}{rgb}{0,0,0}
+\definecolor{Strings}{rgb}{0,0.63,0}
+\definecolor{Comments}{rgb}{0,0.63,1}
+\definecolor{Backquotes}{rgb}{0,0,0}
+\definecolor{Classname}{rgb}{0,0,0}
+\definecolor{FunctionName}{rgb}{0,0,0}
+\definecolor{Operators}{rgb}{0,0,0}
+\definecolor{Background}{rgb}{0.98,0.98,0.98}
+
+
+\lstset{
+numbers=left,
+numberstyle=\footnotesize,
+numbersep=1em,
+breaklines=true,
+xleftmargin=1em,
+framextopmargin=2em,
+framexbottommargin=2em,
+showspaces=false,
+showtabs=false,
+showstringspaces=false,
+frame=l,
+tabsize=4,
+% Basic
+basicstyle=\ttfamily\small\setstretch{1},
+backgroundcolor=\color{Background},
+language=Python,
+% Comments
+commentstyle=\color{Comments}\slshape,
+% Strings
+stringstyle=\color{Strings},
+morecomment=[s][\color{Strings}]{"""}{"""},
+morecomment=[s][\color{Strings}]{'''}{'''},
+% keywords
+morekeywords={import,from,class,def,for,while,if,is,in,elif,else,not,and,or,print,break,continue,return,True,False,None,access,as,,del,except,exec,finally,global,import,lambda,pass,print,raise,try,assert},
+keywordstyle={\color{Keywords}\bfseries},
+% additional keywords
+morekeywords={[2]@invariant},
+keywordstyle={[2]\color{Decorators}\slshape},
+emph={self},
+emphstyle={\color{self}\slshape},
+%
+}

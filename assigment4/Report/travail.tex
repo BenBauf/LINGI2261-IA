@@ -1,0 +1,97 @@
+\input{header.tex}
+\input{entete-baspage-titre.tex}
+\usepackage{lipsum}
+\begin{document}
+\input{title.tex}
+
+%{\setlength{\baselineskip}{1.15\baselineskip}	% Pour l'illusion d'avoir écrit plus...
+
+\tableofcontents
+\thispagestyle{empty}	% pour enlever le numéro de page
+\newpage
+\pagenumbering{arabic} % on triche avec la numéroation des pages :)
+
+\section{The Knapsack Problem}
+\subsection{Diversification versus Intensification}
+\begin{description}
+\item[Question 3]: Compare the 3 strategies on the given knapsack instances. Report in a table the results of the tests. Interesting metrics to report are: the computation time, the value of the best solution and the number of steps when the best result was reached ( Node.step may be useful). A good way to eliminate the effect of the randomness of some of the strategies is to run the computation multiple times and take the mean value of the runs. For the first and the third strategy, each instance should be tested 10 times.\\
+
+\item[Question 4]: Answer the following questions :
+\begin{enumerate}[(a)]
+\item What is the best strategy ?\\
+\item Why do you think the best strategy beats the other ones ?\\
+\item What are the limitations of each strategy in terms of diversification and intensification ?\\
+\item What is the behaviour of the different techniques when they fall in a local optimum ?
+\end{enumerate}
+\end{description}
+
+\section{Propositional Logic}
+\subsection{Models and logical connectives}
+\begin{description}
+\item[Question 1]: For each sentence, give the number of models that satisfy it (considering the proposition variable A, B, C and D). \\
+\begin{enumerate}
+\item $(A \wedge B) \vee ( \neg B \wedge C)$:\\
+Models : \\
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+$A$ & $B$ & $C$ \\
+\hline
+$V$ & $V$ & $V$\\
+$V$ & $V$ & $F$\\
+$V$ & $F$ & $V$\\
+$F$ & $V$ & $V$\\
+\hline
+\end{tabular}
+\end{center}
+\item $A \wedge \neg B$:\\
+Models : \\
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+$A$ & $B$\\
+\hline
+$V$ & $F$ \\
+\hline
+\end{tabular}
+\end{center}
+\item $(A \Rightarrow B) \Leftrightarrow \neg C \vee \neg D$ : \\
+Models : \\
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+$A$ & $B$ & $C$ & $D$\\
+\hline
+$V$ & $V$ & $V$ & $F$\\
+$V$ & $V$ & $F$ & $V$\\
+$V$ & $V$ & $F$ & $F$\\
+$V$ & $F$ & $V$ & $V$\\
+$F$ & $V$ & $V$ & $F$\\
+$F$ & $V$ & $F$ & $V$\\
+$F$ & $V$ & $F$ & $F$\\
+$F$ & $F$ & $V$ & $F$\\
+$F$ & $F$ & $F$ & $V$\\
+$F$ & $F$ & $F$ & $F$\\
+\hline
+\end{tabular}
+\end{center}
+\end{enumerate}
+\end{description}
+
+\subsection{RPG Equipment Problem}
+\begin{description}
+\item[Question 1]: Explain how you can express this problem with propositional logic. What are the variables and how do you translate the relationsand the query?\\
+
+\item[Question 2]: Translate your model into Conjunctive Normal Form (CNF).\\
+
+\item[Question 4]: What is the output of your program when simulating the level Level_05.gz with the merchant Merchant.gz ? How many variables and how many clauses did you generate to get this result (this should appearin the output of the minisat program which is displayed in the output of play.py )?\\
+
+\item[Question 5]: Report in a table the number of clauses, variables and the number of equipment pieces needed when simulating the levels Level_005.gz , Level_050.gz ,Level_250.gz and Level_666.gz with Merchant.gz . How does the number of clauses, variables and pieces of equipment needed evolve with the size of thelevel? The number of a level represents the number of enemies it contains (e.g. Level_005.gz contains 5 enemies).\\
+
+\item[Question 6]: Report in a file Level_666.equipments the solution when simulating the Level_666.gz with Merchant.py . Your solution file should list the pieces of equipment needed, one piece of equipment per line (only the name of a single piece of equipment should be printed per line and no additional character except the ’\n’ at the end of the line).\\
+
+
+\end{description}
+
+
+\end{document}
