@@ -61,13 +61,12 @@ class Knapsack(Problem):
                     yield('replace',(tuple(sleigh),tuple(notinSleigh),(utility-object[2]+gift[2],weight-object[1]+gift[1])))
 
     
-    def Heuristique(self,node):
-        state=node.state
+    def value(self,state):
         if(state[0]=='init'):
             state=state[1]
         if(len(state[0]) is 0):
             return 0
-        return self.sumUtility-state[2][0]
+        return state[2][0]
 
 
     #read the file, create the list and code it for the state schema
@@ -94,26 +93,3 @@ class Knapsack(Problem):
         self.sumUtility=sum
         self.allObjects=tuple(allObjects)
          
-        
-    
-
-
-
-
-###################### Launch the search #########################
-        
-problem=Knapsack("knapsack_instances/knapsack_instances/knapsack0.txt")
-#node=depth_first_tree_search(problem)
-node=astar_graph_search(problem, problem.Heuristique)
-#example of print
-path=node.path()
-path.reverse()
-n=path.pop()
-print(n.state[0])
-##path.reverse()
-##for n in path:
-##    state=n.state
-##    if state[0]=="init":
-##        state=state[1]
-##    print(state[0])
-##    #print(state)
