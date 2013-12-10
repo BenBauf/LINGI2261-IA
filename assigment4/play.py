@@ -13,7 +13,10 @@ merchant = rpg.Merchant(sys.argv[1])
 level = rpg.Level(sys.argv[2])
 level_num_str = sys.argv[2].split("_")[1].split(".")[0]
 
+variables = 0
 clauses = []
+
+
 # TODO
 # Append all clauses needed to find the correct equipment in the 'clauses' list.
 #
