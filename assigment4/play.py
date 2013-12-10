@@ -31,18 +31,21 @@ clauses = []
 # For example if you want to add the clauses equ1 or equ2 or ... or equN (i.e. a
 # disjunction of all the equipment pieces the merchant proposes), you should write:
 # 
-clauses.append(tuple(equ.index for equ in merchant.equipments))
+#clauses.append(tuple(equ.index for equ in merchant.equipments))
+for equ in merchant.equipments:
+    clauses.append([equ.index,])
 
 #abilities for equipments
-for equ in merchant.equipments:
-    for ab in equ.provides:
-        clauses.append((2,[(0-equ.index,ab.index),(ab.index,)]))
+#for equ in merchant.equipments:
+#    for ab in equ.provides:
+#        clauses.append( (2,[ (0-equ.index,ab.index),(ab.index,) ] ) )
 
 #requires
-requires=[]
-for ab in level.abilities:
-    requires.append(ab.index,)
-clauses.append((len(level.abilities),requires))
+#requires=[]
+#for ab in level.abilities:
+#    requires.append(ab.index,)
+#print(requires)
+#clauses.append((len(level.abilities),requires))
     
 #clauses.append()
 
@@ -52,8 +55,8 @@ clauses.append((len(level.abilities),requires))
 # 
 # For example, if your clauses contain all the equipments proposed by merchant and
 # all the abilities provided by these equipment, you would have:
-TOREPLACE = len(merchant.abilities) + len(merchant.equipments)
-#TOREPLACE = len(merchant.equipments)
+#TOREPLACE = len(merchant.abilities) + len(merchant.equipments)
+TOREPLACE = len(merchant.equipments)
 sol = minisat.minisat(TOREPLACE, clauses)
 
 equipment_sol = [eq for eq in sol if eq <= merchant.abi_base_index]
