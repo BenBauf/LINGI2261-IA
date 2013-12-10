@@ -80,9 +80,16 @@ $F$ & $F$ & $F$ & $F$\\
 
 \subsection{RPG Equipment Problem}
 \begin{description}
-\item[Question 1]: Explain how you can express this problem with propositional logic. What are the variables and how do you translate the relationsand the query?\\
-
+\item[Question 1]: Explain how you can express this problem with propositional logic. What are the variables and how do you translate the relations and the query?\\
+This problem could be divided in four relations : 
+\begin{itemize}
+\item[Provides]: $E \Leftrightarrow A$, this relation means that buying an object E allows the player to posses the ability A.
+\item[IsProvided]: $A  \Leftrightarrow E_1 \vee \ldots \vee E_n, with E_1,\ldots,E_n provide ability A$, this relation means that the player must buy objects to posses abilities.
+\item[Conflicts]: $ \neg (E_1 \wedge E_2 \wedge E_3) $, this relation forbid the player to own more than two objects that are in conflict.
+\item[Requires]: $ A_i, \forall i such as A_i is needed to defeat an ennemy$, this relation defines all abilities required to succeed the level.
+\end{itemize}
 \item[Question 2]: Translate your model into Conjunctive Normal Form (CNF).\\
+
 
 \item[Question 4]: What is the output of your program when simulating the level Level_05.gz with the merchant Merchant.gz ? How many variables and how many clauses did you generate to get this result (this should appearin the output of the minisat program which is displayed in the output of play.py )?\\
 
