@@ -15,13 +15,36 @@
 \subsection{Diversification versus Intensification}
 \begin{description}
 \item[Question 3]: Compare the 3 strategies on the given knapsack instances. Report in a table the results of the tests. Interesting metrics to report are: the computation time, the value of the best solution and the number of steps when the best result was reached ( Node.step may be useful). A good way to eliminate the effect of the randomness of some of the strategies is to run the computation multiple times and take the mean value of the runs. For the first and the third strategy, each instance should be tested 10 times.\\
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{2}{|c|}{Level} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
+\hline
+\multirow{3}{*} {Radomwalk} & Computation time &&&&&&&&&&\\
+& Value of the best solution &&&&&&&&&&\\
+& Number of steps &&&&&&&&&&\\
+\hline
+\multirow{3}{*} {Maxvalue} & Computation time &&&&&&&&&&\\
+& Value of the best solution &&&&&&&&&&\\
+& Number of steps &&&&&&&&&&\\
+\hline
+\multirow{3}{*} {Randomized\_maxvalue} & Computation time &&&&&&&&&&\\
+& Value of the best solution &&&&&&&&&&\\
+& Number of steps &&&&&&&&&&\\
+\hline
+
+\end{tabular}
+
 
 \item[Question 4]: Answer the following questions :
 \begin{enumerate}[(a)]
 \item What is the best strategy ?\\
+
 \item Why do you think the best strategy beats the other ones ?\\
+
 \item What are the limitations of each strategy in terms of diversification and intensification ?\\
-\item What is the behaviour of the different techniques when they fall in a local optimum ?
+
+\item What is the behaviour of the different techniques when they fall in a local optimum ?\\
+
 \end{enumerate}
 \end{description}
 
@@ -58,7 +81,7 @@ $V$ & $F$ \\
 \item $(A \Rightarrow B) \Leftrightarrow \neg C \vee \neg D$ : \\
 Models : \\
 \begin{center}
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|c|c|c|}
 \hline
 $A$ & $B$ & $C$ & $D$\\
 \hline
@@ -83,22 +106,103 @@ $F$ & $F$ & $F$ & $F$\\
 \item[Question 1]: Explain how you can express this problem with propositional logic. What are the variables and how do you translate the relations and the query?\\
 This problem could be divided in four relations : 
 \begin{itemize}
-\item[Provides]: $E \Leftrightarrow A$, this relation means that buying an object E allows the player to posses the ability A.
-\item[IsProvided]: $A  \Leftrightarrow E_1 \vee \ldots \vee E_n, with E_1,\ldots,E_n provide ability A$, this relation means that the player must buy objects to posses abilities.
+\item[Provides]: $E \Rightarrow A$, this relation means that buying an object E allows the player to posses the ability A.
+\item[IsProvided]: $A  \Rightarrow E_1 \vee \ldots \vee E_n,$ with $  E_1,\ldots,E_n$ provide ability $A$, this relation means that the player must buy objects to posses abilities.
 \item[Conflicts]: $ \neg (E_1 \wedge E_2 \wedge E_3) $, this relation forbid the player to own more than two objects that are in conflict.
-\item[Requires]: $ A_i, \forall i such as A_i is needed to defeat an ennemy$, this relation defines all abilities required to succeed the level.
+\item[Requires]: $ A_i, \forall i$ such as $A_i$ is needed to defeat an ennemy, this relation defines all abilities required to succeed the level.
 \end{itemize}
 \item[Question 2]: Translate your model into Conjunctive Normal Form (CNF).\\
+In CNF, our relations are quite easy to translate:
+\begin{itemize}
+\item[Provides]: $\neg E \vee A$
+\item[IsProvided]: $\neg \vee E_1 \vee \ldots \vee E_n $
+\item[Conflicts]: $\neg E_1 \vee \neg E_2 \vee \neg E_3$
+\item[Requires]: $A$ 
+\end{itemize}
+\newpage
+\item[Question 4]: What is the output of your program when simulating the level $Level_05.gz$ with the merchant Merchant.gz ? How many variables and how many clauses did you generate to get this result (this should appearin the output of the minisat program which is displayed in the output of play.py )?\\
+ \setstretch{1.0}
+\begin{verbatim} 
+
+============================[ Problem Statistics ]=============================
+|                                                                             |
+|  Number of variables:          4916                                         |
+|  Number of clauses:           18916                                         |
+|  Parse time:                   0.00 s                                       |
+|                                                                             |
+============================[ Search Statistics ]==============================
+| Conflicts |          ORIGINAL         |          LEARNT          | Progress |
+|           |    Vars  Clauses Literals |    Limit  Clauses Lit/Cl |          |
+===============================================================================
+===============================================================================
+restarts              : 1
+conflicts             : 0              (-nan /sec)
+decisions             : 1651           (0.00 % random) (inf /sec)
+propagations          : 4916           (inf /sec)
+conflict literals     : 0              (-nan % deleted)
+Memory used           : 20.00 MB
+CPU time              : 0 s
+
+SATISFIABLE
+Equipment needed to beat the level 005
+  - Lightning Eastern Armor
+  - Iron Elite Cleric Gauntlets
+  - Earth Smough's Gauntlets
+  - Iron Smough's Armor
+  - Water Leggings of Favor
+  - Blood Mask of the Sealer
+  - Fire Oolacile Ivory Catalyst
+  - Air Black Sorcerer Gauntlets
+  - Ice Sorcerer Gauntlets
+  - Blood Paladin Leggings
+  - Air Thorolund Talisman
+  - Blood Black Tights
+  - Lightning Royal Helm
+  - Air Greatshield of Artorias
+  - Earth Cleric Leggings
+  - Air Shotel
+  - Ice Large Club
+  - Blood Traveling Boots
+  - Water Four-Pronged Plow
+  - Lightning Zweihander
+  - Fire Havel's Leggings
+  - Lightning Gold-Hemmed Black Hood
+  - Ice Greatsword of Artorias
+  - Ice Bandit's Knife
+Total pieces of equipment needed: 24
+
+\end{verbatim}
+ \setstretch{1.5}
+ 
+\item[Question 5]: Report in a table the number of clauses, variables and the number of equipment pieces needed when simulating the levels Level\_005.gz , Level\_050.gz ,Level\_250.gz and Level\_666.gz with Merchant.gz . How does the number of clauses, variables and pieces of equipment needed evolve with the size of thelevel? The number of a level represents the number of enemies it contains (e.g. Level\_005.gz contains 5 enemies).\\
+
+\begin{tabular}{|l|r|r|r|}
+\hline
+Level & Number of variables & Number of clauses & Pieces of equipment needed\\
+\hline
+Level 05 & 4.916 & 18.916 & 24\\
+Level 50 & 4916 & 19.125 & 157\\
+Level 250 & 4.916 & 19.796 & 377 \\
+Level 666 & 4.916 & 20.403 & 505\\
+\hline
+\end{tabular}
 
 
-\item[Question 4]: What is the output of your program when simulating the level Level_05.gz with the merchant Merchant.gz ? How many variables and how many clauses did you generate to get this result (this should appearin the output of the minisat program which is displayed in the output of play.py )?\\
 
-\item[Question 5]: Report in a table the number of clauses, variables and the number of equipment pieces needed when simulating the levels Level_005.gz , Level_050.gz ,Level_250.gz and Level_666.gz with Merchant.gz . How does the number of clauses, variables and pieces of equipment needed evolve with the size of thelevel? The number of a level represents the number of enemies it contains (e.g. Level_005.gz contains 5 enemies).\\
+\begin{figure}[ht!]
+Let's see the evolution of these parameters related to the number of ennemies :\\
+\begin{center}
+\includegraphics[scale=0.6]{mean.png}
+\caption{Orange line is related to the left Y axe and blue line is related to the right one.}\end{center}
+\end{figure}
 
-\item[Question 6]: Report in a file Level_666.equipments the solution when simulating the Level_666.gz with Merchant.py . Your solution file should list the pieces of equipment needed, one piece of equipment per line (only the name of a single piece of equipment should be printed per line and no additional character except the ’\n’ at the end of the line).\\
+
+As the first tabular showed, the number of clauses doesn't seems to evolve a lot related to the increasing number of ennemies. As seen in figure 1, the average number of pieces of equipments or number of clauses decreases doesn't grow as fast as the number of ennemies. We can so compute larger models without having to care about computation time. We can explain it by the fact that even if there is only a single ennemy, the model still have to know all pieces from merchant and all conflicts or abilities related to them and this is the model main part.
 
 
 \end{description}
+
+
 
 
 \end{document}
