@@ -8,21 +8,14 @@ from search import *
 class Knapsack(Problem):
     max_size=0
     number=0
-    step=0
-    allObjects=()
     sumUtility=0
     
     def __init__(self,path):
-        self.createMap(path)
-        self.initial=('init',((),self.allObjects,(0,0)))
-
-    
-    def goal_test(self, state):
-        return self.step > 100
-
+        objects=self.createMap(path)
+        self.createSleigh(objects)
+        #self.initial=('init',((),self.allObjects,(0,0)))
         
     def successor(self, state):
-        self.step=self.step+1
         if(state[0]=='init'):
             state=state[1]
         available=state[1]
@@ -91,5 +84,24 @@ class Knapsack(Problem):
                 sum+=object[2]
                 
         self.sumUtility=sum
-        self.allObjects=tuple(allObjects)
+        allObjects=sorted(allObjects, key=lambda obj: obj[2])
+        return allObjects
+
+    def createSleigh(self,allObjects):
+        sleigh=[]
+        available=allObjects
+        weight=0
+        utility=0
+        while weight <= self.max_size and len(available)>0:
+            elem=available.pop(0)
+            if (weight+elem[1]<=self.max_size):
+                sleigh.append(elem)
+                weight=weight+elem[1]
+                utility=utility+elem[2]
+            else:
+                available.append(elem)
+                break              
+
+        
+        self.initial=('init',(sleigh,available,(utility,weight)))
          
