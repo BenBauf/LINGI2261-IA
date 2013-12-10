@@ -15,24 +15,25 @@
 \subsection{Diversification versus Intensification}
 \begin{description}
 \item[Question 3]: Compare the 3 strategies on the given knapsack instances. Report in a table the results of the tests. Interesting metrics to report are: the computation time, the value of the best solution and the number of steps when the best result was reached ( Node.step may be useful). A good way to eliminate the effect of the randomness of some of the strategies is to run the computation multiple times and take the mean value of the runs. For the first and the third strategy, each instance should be tested 10 times.\\
+\end{description}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
 \hline
-\multicolumn{2}{|c|}{Level} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
+\multicolumn{2}{|c|}{Level} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
 \hline
-\multirow{3}{*} {Radomwalk} & Computation time &&&&&&&&&&\\
-& Value of the best solution &&&&&&&&&&\\
-& Number of steps &&&&&&&&&&\\
+\multirow{3}{0.5cm} {Rw} & Time & 627 & 185 & 178 & 244 & 316 & 294 & 347 & 471& 404& 450\\
+& Value & 56.109 & 12.248 & 10.541 & 23.446 & 24.190 & 33.748 & 33.402 & 37.603& 50.836 & 49.428\\
+& Steps & 72 & 66 & 61 & 9 & 73 & 86 & 18 & 24 & 74 & 9\\
 \hline
-\multirow{3}{*} {Maxvalue} & Computation time &&&&&&&&&&\\
-& Value of the best solution &&&&&&&&&&\\
-& Number of steps &&&&&&&&&&\\
+\multirow{3}{0.5cm} {Mv} & Time & 201 & 124 & 124 & 147 & 173 & 150 & 178 & 217 & 175 & 213\\
+& Value & 58.619 & 12.273 & 14.359 & 24.535 & 25.512 & 33.855 & 36.505 & 41.051 & 52.429 & 52.313\\
+& Steps & 5 & 5 & 8 & 4 & 6 & 8 & 9 & 10 & 7 & 7\\
 \hline
-\multirow{3}{*} {Randomized\_maxvalue} & Computation time &&&&&&&&&&\\
-& Value of the best solution &&&&&&&&&&\\
-& Number of steps &&&&&&&&&&\\
+\multirow{3}{0.65cm} {Rmv} & Time & 214 & 132 & 132 & 142 & 169 &  156 & 179 & 219 & 184 & 224\\
+& Value & 62.124 & 14.888 & 15.283 & 24.704 & 33.748 & 33.855 & 37.885 & 42.315 & 54.694& 53.328\\
+& Steps & 21 & 68 & 14 & 31 & 86 & 22 & 43 & 60 & 41& 39\\
 \hline
-
 \end{tabular}
+\begin{description}
 
 
 \item[Question 4]: Answer the following questions :

@@ -83,7 +83,11 @@ def randomized_max_value(problem, limit=100, callback=None):
 
 ###################### Launch the search #########################
         
-problem=Knapsack("knapsack_instances/knapsack_instances/knapsack0.txt")
+problem=Knapsack(sys.argv[1])
 node=randomized_max_value(problem,70)
 print(node.state[0])
+print("Step")
+print(node.step)
+print("Best val")
+print(node.state[2][0])
 

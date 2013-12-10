@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.9)  10 DEC 2013 15:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.9)  10 DEC 2013 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1130,32 +1130,47 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 17.
 
-Overfull \hbox (4.90984pt too wide) in paragraph at lines 17--36
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Overfull \hbox (2.4415pt too wide) in paragraph at lines 23--23
+[]|\T1/ptm/m/n/12 Rw|  
+ []
+
+
+Overfull \hbox (2.44151pt too wide) in paragraph at lines 27--27
+[]|\T1/ptm/m/n/12 Mv|  
+ []
+
+
+Overfull \hbox (4.84567pt too wide) in paragraph at lines 31--31
+[]|\T1/ptm/m/n/12 Rmv|  
+ []
+
+
+Overfull \hbox (50.34734pt too wide) in paragraph at lines 19--36
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--56
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
@@ -1163,85 +1178,84 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \item
-           $(A \wedge B) \vee ( \neg B \wedge C)$:\\ [1]
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+l.49 \end{enumerate}
+                     [1]
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--72
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--83
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
 [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
 
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 127--127
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 128--128
  []\T1/lmtt/m/n/12 ============================[ Problem Statistics ]==========
 ===================[] 
  []
 
 
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 128--128
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 129--129
  []\T1/lmtt/m/n/12 |                                                           
-                  |[] 
- []
-
-
-Overfull \hbox (47.71547pt too wide) in paragraph at lines 129--129
- []\T1/lmtt/m/n/12 |  Number of variables:          4916                       
                   |[] 
  []
 
 
 Overfull \hbox (47.71547pt too wide) in paragraph at lines 130--130
+ []\T1/lmtt/m/n/12 |  Number of variables:          4916                       
+                  |[] 
+ []
+
+
+Overfull \hbox (47.71547pt too wide) in paragraph at lines 131--131
  []\T1/lmtt/m/n/12 |  Number of clauses:           18916                       
                   |[] 
  []
 
 
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 131--131
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 132--132
  []\T1/lmtt/m/n/12 |  Parse time:                   0.00 s                     
                   |[] 
  []
 
 
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 132--132
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 133--133
  []\T1/lmtt/m/n/12 |                                                           
                   |[] 
  []
 
 
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 133--133
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 134--134
  []\T1/lmtt/m/n/12 ============================[ Search Statistics ]===========
 ===================[] 
  []
 
 
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 134--134
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 135--135
  []\T1/lmtt/m/n/12 | Conflicts |          ORIGINAL         |          LEARNT   
        | Progress |[] 
  []
 
 
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 135--135
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 136--136
  []\T1/lmtt/m/n/12 |           |    Vars  Clauses Literals |    Limit  Clauses 
 Lit/Cl |          |[] 
- []
-
-
-Overfull \hbox (47.72948pt too wide) in paragraph at lines 136--136
- []\T1/lmtt/m/n/12 ============================================================
-===================[] 
  []
 
 
@@ -1250,33 +1264,39 @@ Overfull \hbox (47.72948pt too wide) in paragraph at lines 137--137
 ===================[] 
  []
 
+
+Overfull \hbox (47.72948pt too wide) in paragraph at lines 138--138
+ []\T1/lmtt/m/n/12 ============================================================
+===================[] 
+ []
+
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 177--178
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--194
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
 
  []
 
 <mean.png, id=95, 455.45157pt x 255.95625pt>
 File: mean.png Graphic file (type png)
  <use mean.png>
-Package pdftex.def Info: mean.png used on input line 195.
+Package pdftex.def Info: mean.png used on input line 196.
 (pdftex.def)             Requested size: 273.27304pt x 153.57492pt.
 
 
 AED: lastpage setting LastPage
 [6] [7 <./mean.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
  (./travail.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `travail.out' has not changed.
 (rerunfilecheck)             Checksum: 85565ABDBA89359AE4EB33EE72D19075;361.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
  18687 strings out of 495031
@@ -1297,7 +1317,7 @@ c10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on travail.pdf (9 pages, 188721 bytes).
+Output written on travail.pdf (9 pages, 189376 bytes).
 PDF statistics:
  151 PDF objects out of 1000 (max. 8388607)
  110 compressed objects within 2 object streams
