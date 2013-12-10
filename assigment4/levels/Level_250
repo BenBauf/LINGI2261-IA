@@ -1,0 +1,750 @@
+Enemy: Blood Iron Golem
+Requirements: Quiet Resistance, Smart Attack, Smart Hands, Skilled Endurance, Hot Necromancy
+
+Enemy: Blood Parasitic Wall Hugger
+Requirements: Swift Fire, Instantaneous Faith, Small Height, Tough Level, Swift Teleportation
+
+Enemy: Iron Torch Zombie
+Requirements: Swift Weight, Smart Fire, Eternal Humanity, Silent Youth, Tough Vitality
+
+Enemy: Water Possessed Tree
+Requirements: Quiet Fire, Quick Intelligence, Full Agility, Impressive Level
+
+Enemy: Fire Undead Attack Dog
+Requirements: Loud Faith, Thick Earth, Large Water, Good Defense, Quiet Vitality
+
+Enemy: Fire Mimic
+Requirements: Disgusting Jump, Smart Attack, Loud Magic, Small Attunement, Rusted Kick
+
+Enemy: Earth Iron Golem
+Requirements: Rusted Hands, Full Faith, Troubled Teleportation, Quiet Combo, Sharp Necromancy
+
+Enemy: Iron Undead Attack Dog
+Requirements: Loud Necromancy, Silent Resistance, Troubled Vitality, Troubled Faith, Sharp Pace
+
+Enemy: Water Stone Demon
+Requirements: Fast Height, Heavy Youth, Powerful Fire, Illusionary Resistance, Dancing Level
+
+Enemy: Air Oolacile Sorceress
+Requirements: Good Faith, Instantaneous Step, Troubled Water, Huge Magic, Smart Jump
+
+Enemy: Air Minor Taurus Demon
+Requirements: Eternal Teleportation, Low Swim, Rusted Hands, Eternal Water, Full Teleportation
+
+Enemy: Air Great Stone Knight
+Requirements: Hot Sprint, Muddy Air, Quiet Defense, Illusionary Endurance, Low Height
+
+Enemy: Lightning Ghost
+Requirements: Impressive Attunement, Smart Mind, Slow Pace, Powerful Hands, Eternal Voice
+
+Enemy: Air Ghost
+Requirements: Heavy Humanity, Endless Resistance, Powerful Height, Instantaneous Resistance, Thick Sprint
+
+Enemy: Lightning Stray Demon
+Requirements: Bad Swim, Cool Strength, Big Weight, Endless Vitality, Impressive Discretion
+
+Enemy: Iron Undead Warrior
+Requirements: Small Strength, Great Magic, Powerful Charisma, Big Kung Fu, Huge Discretion
+
+Enemy: Earth Giant Humanity
+Requirements: Good Faith, Bad Swim, Powerful Jump, Fast Agility, Instantaneous Agility
+
+Enemy: Ice Giants
+Requirements: Illusionary Head, Smart Voice, Large Faith, Good Humanity, Thick Feet
+
+Enemy: Fire Other
+Requirements: Muddy Feet, Flying Stance, Melodic Teleportation, Dancing Fire, Low Attunement
+
+Enemy: Lightning Undead Assassin
+Requirements: Loud Agility, Powerful Pyromancy, Large Sprint, Bad Hands, Tough Resistance
+
+Enemy: Fire Wheel Skeleton
+Requirements: Thick Necromancy, Skilled Dexterity, Thick Jump, Endless Attunement, Troubled Humanity
+
+Enemy: Lightning Infested Barbarian with club
+Requirements: Good Teleportation, Dancing Strength, Fast Attack, Skilled Fire, Melodic Attunement
+
+Enemy: Earth Mimic
+Requirements: Dancing Feet, Quick Endurance, Sharp Pyromancy, Huge Hands, Good Attunement
+
+Enemy: Water Serpent Soldier
+Requirements: Quiet Necromancy, Tough Earth, Heavy Necromancy, Quiet Weight, Flying Fire
+
+Enemy: Iron Giant
+Requirements: Illusionary Charisma, Cool Strength, Disgusting Air, Skilled Kick, Good Dexterity
+
+Enemy: Water Tree Lizard
+Requirements: High Discretion, Swift Strength, Powerful Weight, Loud Endurance, Small Level
+
+Enemy: Ice Chaos Eater
+Requirements: Muddy Water, Huge Youth, Quiet Agility, Loud Swim, Powerful Agility
+
+Enemy: Water Mushroom People
+Requirements: Tough Air, Troubled Youth, Illusionary Necromancy, Flying Voice, Quick Faith
+
+Enemy: Fire Seath The Scaleless
+Requirements: Huge Necromancy, Full Charisma, Disgusting Kung Fu, Rusted Pyromancy, Loud Combo
+
+Enemy: Ice Blowdart Sniper
+Requirements: Rusted Mind, Smart Wings, Illusionary Water, Full Earth, Bad Vitality
+
+Enemy: Air Vagrants
+Requirements: Illusionary Wings, Eternal Humanity, Disgusting Magic, Low Magic, Dancing Hands
+
+Enemy: Fire Drake
+Requirements: Loud Head, Large Step, Low Kung Fu, Eternal Level, Sharp Dexterity
+
+Enemy: Ice Pyromancer
+Requirements: Cool Agility, Impenetrable Head, Hot Intelligence, Fast Wings, Small Height
+
+Enemy: Water Zombie
+Requirements: Muddy Attunement, Endless Pyromancy, Hot Kick, Low Resistance, Tough Dexterity
+
+Enemy: Earth Stone Guardian
+Requirements: Quiet Discretion, Rusted Mind, Silent Water, Acrobatic Necromancy, Disgusting Intelligence
+
+Enemy: Air Undead Archer Knight
+Requirements: Dancing Endurance, Light Combo, Troubled Level, Melodic Humanity, Cool Combo
+
+Enemy: Lightning Mimic
+Requirements: Impenetrable Combo, Smart Combo, Good Kung Fu, Huge Attack, Powerful Voice
+
+Enemy: Water Giant
+Requirements: Impenetrable Intelligence, Circular Hands, Rusted Height, Hot Weight, Instantaneous Hands
+
+Enemy: Lightning Chained Prisoner
+Requirements: Disgusting Kung Fu, Disgusting Voice, Fast Feet, Tough Defense, Smart Air
+
+Enemy: Water Infested Barbarian with boulder
+Requirements: Slow Wings, Fast Defense, Small Charisma, Sharp Kung Fu, Hot Faith
+
+Enemy: Iron Crossbreed Priscilla
+Requirements: Quiet Voice, Impenetrable Height, Flying Water, Eternal Air, Silent Swim
+
+Enemy: Iron Pyromancer
+Requirements: Slow Vitality, Flying Kung Fu, Instantaneous Strength, Small Jump, Fast Mind
+
+Enemy: Water Flaming Attack Dog
+Requirements: Huge Teleportation, Good Strength, Tough Endurance, Large Earth, Huge Height
+
+Enemy: Water Drake
+Requirements: Troubled Dexterity, Cool Wings, High Jump, Tough Discretion, Flying Intelligence
+
+Enemy: Earth Undead Crystal Soldier
+Requirements: Skilled Humanity, High Wings, Low Kung Fu, Instantaneous Mind, Skilled Air
+
+Enemy: Earth Undead Archer Knight
+Requirements: Cool Youth, Circular Kick, Rusted Strength, Cool Intelligence, Silent Necromancy
+
+Enemy: Ice Taurus Demon
+Requirements: Swift Sprint, Endless Water, Quiet Youth, Great Height, Heavy Intelligence
+
+Enemy: Lightning Parasitic Wall Hugger
+Requirements: Loud Earth, Smart Combo, Smart Defense, Circular Dexterity, High Pyromancy
+
+Enemy: Water Asylum Demon
+Requirements: Cool Agility, Powerful Pyromancy, Hot Attack, Big Dexterity, Disgusting Air
+
+Enemy: Air Tree Lizard
+Requirements: Muddy Feet, Light Level, Great Discretion, Quiet Earth, Low Level
+
+Enemy: Lightning Giants
+Requirements: Full Air, Impressive Sprint, Powerful Combo, Large Youth, Eternal Humanity
+
+Enemy: Earth Serpent Mage
+Requirements: Acrobatic Earth, Flying Necromancy, Flying Attunement, Low Step, Melodic Intelligence
+
+Enemy: Ice Phalanx
+Requirements: Sharp Faith, High Humanity, Bad Necromancy, Huge Level, Quick Level
+
+Enemy: Water Centipede Demon
+Requirements: Low Humanity, Small Stance, Slow Faith, Heavy Faith, Great Faith
+
+Enemy: Air The Bed of Chaos
+Requirements: Thick Intelligence, Small Intelligence, Endless Attunement, Heavy Intelligence, Quiet Attunement
+
+Enemy: Iron Serpent Mage
+Requirements: Quiet Pyromancy, Full Kick, Quiet Combo, Thick Vitality, Powerful Vitality
+
+Enemy: Ice Basilisk
+Requirements: Silent Attack, Quick Pace, Low Combo, High Charisma, Acrobatic Height
+
+Enemy: Water Infested Ghoul
+Requirements: Circular Level, Tough Jump, Hot Fire, Muddy Attack, Melodic Level
+
+Enemy: Water Nito
+Requirements: Loud Necromancy, Eternal Faith, Good Earth, Great Agility, Endless Dexterity
+
+Enemy: Lightning Serpent Mage
+Requirements: Endless Faith, Instantaneous Level, Cool Kung Fu, Muddy Fire, Smart Faith
+
+Enemy: Earth Ghost
+Requirements: Great Strength, Hot Sprint, Huge Sprint, Flying Agility, Impenetrable Step
+
+Enemy: Air Vile Maggot
+Requirements: Illusionary Vitality, Full Charisma, Great Youth, Dancing Height, Powerful Weight
+
+Enemy: Lightning Asylum Demon
+Requirements: Great Voice, Impressive Attunement, Acrobatic Attunement, Heavy Hands, Endless Head
+
+Enemy: Fire Ceaseless Discharge
+Requirements: Great Combo, Dancing Stance, Bad Teleportation, Muddy Intelligence, Rusted Magic
+
+Enemy: Ice Serpent Soldier
+Requirements: Good Swim, Bad Defense, Muddy Kung Fu, Loud Kung Fu, Impenetrable Charisma
+
+Enemy: Air Undead Crystal Soldier
+Requirements: Fast Necromancy, Flying Iai, Tough Iai, Silent Magic, Low Attunement
+
+Enemy: Water Giant Skeleton (Sword)
+Requirements: Muddy Humanity, Impressive Mind, Instantaneous Charisma, Cool Pace, Acrobatic Weight
+
+Enemy: Lightning Torch Zombie
+Requirements: Quick Intelligence, Big Kick, Melodic Sprint, High Kung Fu, Skilled Mind
+
+Enemy: Fire Giant Skeleton (Sword)
+Requirements: Circular Iai, Huge Pyromancy, Illusionary Jump, Large Dexterity, Hot Jump
+
+Enemy: Fire Wild Dog
+Requirements: Big Defense, Tough Feet, Low Kung Fu, Quick Stance, Sharp Head
+
+Enemy: Fire Basilisk
+Requirements: Flying Teleportation, Great Youth, Full Youth, Quiet Level, Smart Discretion
+
+Enemy: Blood Sewer Rat
+Requirements: Swift Magic, Heavy Jump, Light Faith, Large Attunement, High Stance
+
+Enemy: Iron Great Stone Knight
+Requirements: Sharp Endurance, Silent Intelligence, Eternal Strength, Endless Fire, Quick Height
+
+Enemy: Water Bone Tower
+Requirements: Swift Mind, Heavy Swim, Circular Agility, Low Step, Good Attack
+
+Enemy: Fire Crystal Lizard
+Requirements: Endless Intelligence, Melodic Vitality, Fast Vitality, High Jump, Tough Agility
+
+Enemy: Iron Undead Crystal Soldier
+Requirements: Smart Mind, Illusionary Charisma, Big Sprint, Skilled Kick, Quiet Step
+
+Enemy: Ice Infested Barbarian with boulder
+Requirements: Loud Discretion, Small Intelligence, Loud Height, Rusted Charisma, Melodic Intelligence
+
+Enemy: Ice Tree Lizard
+Requirements: Sharp Swim, Rusted Necromancy, Disgusting Vitality, Heavy Magic, Fast Iai
+
+Enemy: Iron Smough
+Requirements: Small Discretion, Loud Discretion, Quiet Attack, Impenetrable Vitality, Large Endurance
+
+Enemy: Earth Undead Soldier with sword
+Requirements: Good Strength, Slow Feet, Fast Weight, Melodic Endurance, Acrobatic Teleportation
+
+Enemy: Fire Bell Gargoyle
+Requirements: Small Weight, Dancing Feet, Quiet Stance, Cool Intelligence, Instantaneous Intelligence
+
+Enemy: Ice Drake
+Requirements: Big Resistance, Fast Teleportation, Low Level, Huge Hands, Disgusting Humanity
+
+Enemy: Blood Skeleton
+Requirements: Tough Iai, Heavy Wings, Flying Kung Fu, Quick Kung Fu, Disgusting Feet
+
+Enemy: Lightning Painting Guardian
+Requirements: Low Jump, Tough Head, Melodic Weight, Sharp Magic, Good Stance
+
+Enemy: Blood Undead Crystal Archer
+Requirements: Powerful Feet, Full Intelligence, Quick Feet, Slow Pyromancy, Great Height
+
+Enemy: Blood Minor Taurus Demon
+Requirements: Large Head, Disgusting Voice, Troubled Iai, Heavy Head, Flying Swim
+
+Enemy: Earth Treant Gardener
+Requirements: Powerful Fire, Large Dexterity, Powerful Combo, Loud Air, Illusionary Feet
+
+Enemy: Fire Serpent Soldier
+Requirements: Muddy Water, Impressive Teleportation, Swift Fire, Powerful Agility, Skilled Weight
+
+Enemy: Ice Great Feline
+Requirements: Troubled Stance, Eternal Step, Disgusting Level, Heavy Agility, Sharp Level
+
+Enemy: Iron Gaping Dragon
+Requirements: Hot Youth, High Agility, Bad Feet, Silent Swim, Light Necromancy
+
+Enemy: Fire Torch Zombie
+Requirements: Rusted Intelligence, Circular Mind, Flying Attack, Big Swim, Smart Height
+
+Enemy: Water Stray Demon
+Requirements: Powerful Feet, Flying Earth, Tough Intelligence, Swift Charisma, Instantaneous Resistance
+
+Enemy: Fire Stray Demon
+Requirements: Swift Swim, Powerful Strength, Tough Necromancy, Dancing Kick, Melodic Head
+
+Enemy: Iron Crow Demon
+Requirements: Loud Weight, Disgusting Step, Low Discretion, Silent Strength, Heavy Step
+
+Enemy: Fire Great Grey Wolf Sif
+Requirements: Large Charisma, Great Endurance, Bad Fire, Instantaneous Vitality
+
+Enemy: Blood Crossbreed Priscilla
+Requirements: Disgusting Feet, Impressive Defense, Impenetrable Youth, Full Feet, Tough Voice
+
+Enemy: Fire Demon Firesage
+Requirements: Swift Attack, Rusted Iai, Melodic Wings, Heavy Feet, Hot Discretion
+
+Enemy: Earth Mass of Souls
+Requirements: Troubled Weight, Endless Teleportation, Instantaneous Hands, Circular Voice, Good Kick
+
+Enemy: Water Egg Carrier
+Requirements: Big Head, Disgusting Water, High Air, Slow Defense, Disgusting Weight
+
+Enemy: Air Infested Barbarian with club
+Requirements: Dancing Head, Loud Combo, Light Agility, Quick Faith, Quiet Mind
+
+Enemy: Fire Man-Eater Shell
+Requirements: Low Attack, Small Iai, Silent Magic, Melodic Defense, Hot Iai
+
+Enemy: Water Undead Attack Dog
+Requirements: Good Intelligence, Circular Attunement, Small Feet, Hot Level, Tough Resistance
+
+Enemy: Ice Painting Guardian
+Requirements: Slow Kick, Loud Jump, Huge Level, Powerful Faith, Thick Height
+
+Enemy: Fire Stone Guardian
+Requirements: Swift Defense, Melodic Necromancy, Dancing Water, Impressive Combo, Acrobatic Discretion
+
+Enemy: Ice Bounding Demon of Izalith
+Requirements: Quick Swim, Huge Stance, High Air, Loud Magic, Loud Jump
+
+Enemy: Ice Crystal Lizard
+Requirements: Impressive Humanity, Eternal Combo, Thick Agility, Flying Swim, Thick Height
+
+Enemy: Ice Dark Sun Gwyndolin
+Requirements: Great Stance, Hot Humanity, Fast Feet, Slow Head, Tough Faith
+
+Enemy: Lightning Giant Humanity
+Requirements: Heavy Youth, Great Youth, Impenetrable Fire, Loud Youth, Instantaneous Jump
+
+Enemy: Water Minor Taurus Demon
+Requirements: Full Necromancy, Circular Intelligence, Impenetrable Earth, Full Water, Small Youth
+
+Enemy: Earth Skeletons
+Requirements: Circular Strength, Quick Intelligence, Hot Vitality, Fast Vitality, Great Feet
+
+Enemy: Iron Ghost
+Requirements: Muddy Water, Huge Dexterity, Impenetrable Hands, Disgusting Weight, Thick Stance
+
+Enemy: Lightning Slime
+Requirements: Cool Iai, Endless Resistance, Good Humanity, Quick Youth, Hot Earth
+
+Enemy: Air Slime
+Requirements: Rusted Dexterity, Smart Kick, Slow Swim, Impenetrable Feet, Huge Swim
+
+Enemy: Blood Bounding Demon of Izalith
+Requirements: Eternal Water, Disgusting Faith, Impenetrable Swim, Thick Stance, Hot Attunement
+
+Enemy: Earth Taurus Demon
+Requirements: Heavy Earth, Loud Voice, Troubled Pyromancy, Troubled Necromancy, Huge Humanity
+
+Enemy: Water Ents
+Requirements: Quiet Necromancy, Light Kick, Thick Air, High Height, Swift Teleportation
+
+Enemy: Water Stone Guardian
+Requirements: Loud Charisma, Sharp Intelligence, Circular Height, Quick Discretion, Large Feet
+
+Enemy: Earth Possessed Tree
+Requirements: Great Voice, Illusionary Agility, High Faith, Quick Mind, Low Sprint
+
+Enemy: Water Ghost
+Requirements: Acrobatic Fire, Light Level, Hot Air, Cool Step, Full Magic
+
+Enemy: Ice Undead Assassin
+Requirements: Thick Humanity, High Head, Impressive Voice, Rusted Agility, Flying Step
+
+Enemy: Iron Phalanx
+Requirements: Huge Teleportation, Muddy Attunement, Slow Stance, Full Water, Tough Attack
+
+Enemy: Fire Undead Soldier with sword
+Requirements: Impressive Wings, Swift Intelligence, Muddy Discretion, Good Resistance, Swift Charisma
+
+Enemy: Iron Engorged Zombie
+Requirements: Sharp Mind, Tough Air, Impenetrable Mind, Troubled Combo, Cool Stance
+
+Enemy: Blood Engorged Zombie
+Requirements: Acrobatic Earth, Great Weight, Smart Voice, Fast Resistance, Endless Weight
+
+Enemy: Air Undead Mage
+Requirements: Circular Charisma, Disgusting Combo, Light Dexterity, Quick Water, High Dexterity
+
+Enemy: Ice Wheel Skeleton
+Requirements: Slow Combo, Circular Teleportation, High Youth, Hot Swim, Powerful Air
+
+Enemy: Air Phalanx
+Requirements: Powerful Agility, Acrobatic Humanity, Good Feet, Disgusting Pyromancy, Bad Fire
+
+Enemy: Earth Undead Assassin
+Requirements: Illusionary Charisma, Troubled Discretion, High Dexterity, Endless Charisma, Swift Teleportation
+
+Enemy: Lightning Undead Archer Knight
+Requirements: Tough Earth, Illusionary Resistance, Instantaneous Air, Low Sprint, Powerful Air
+
+Enemy: Water The Channeler
+Requirements: Illusionary Voice, Instantaneous Stance, Impenetrable Feet, Thick Attack, Smart Swim
+
+Enemy: Iron Mass of Souls
+Requirements: Sharp Faith, Quick Pace, Endless Hands, Skilled Fire, Acrobatic Voice
+
+Enemy: Fire Parasitic Wall Hugger
+Requirements: Sharp Discretion, Small Mind, Full Kick, Silent Discretion, Light Attunement
+
+Enemy: Blood Skeleton Beast
+Requirements: Flying Pyromancy, Impenetrable Voice, Cool Attunement, Disgusting Head, Illusionary Agility
+
+Enemy: Blood Hollows
+Requirements: Impressive Kick, Illusionary Iai, Smart Necromancy, Huge Fire, Eternal Head
+
+Enemy: Iron Mimic
+Requirements: Rusted Level, Big Dexterity, Fast Attunement, Illusionary Height, Muddy Kick
+
+Enemy: Air Sewer Rat
+Requirements: Small Strength, Sharp Earth, Tough Attunement, High Fire, Heavy Magic
+
+Enemy: Water Four Kings
+Requirements: Big Agility, Circular Agility, Good Pace, Heavy Magic, Impenetrable Youth
+
+Enemy: Blood Vagrants
+Requirements: High Attack, Endless Dexterity, Slow Head, Flying Vitality, Great Fire
+
+Enemy: Ice Chaos Bug
+Requirements: Cool Weight, Rusted Height, Thick Water, Rusted Endurance, Troubled Fire
+
+Enemy: Ice Undead Warrior
+Requirements: Low Kick, Swift Strength, Illusionary Resistance, Small Agility, Rusted Step
+
+Enemy: Water Wisp
+Requirements: Thick Kung Fu, Eternal Kick, Thick Wings, Skilled Hands, Eternal Weight
+
+Enemy: Blood Blowdart Sniper
+Requirements: Disgusting Swim, Illusionary Pace, Flying Kung Fu, Smart Step, Great Fire
+
+Enemy: Ice Undead Soldier with sword
+Requirements: Skilled Resistance, Impenetrable Wings, Melodic Defense, Slow Humanity, Impressive Discretion
+
+Enemy: Lightning Crow Demon
+Requirements: Full Attunement, Eternal Stance, Impressive Level, High Mind, Flying Wings
+
+Enemy: Iron Hollows
+Requirements: Circular Jump, Fast Wings, Low Level, Cool Intelligence, Flying Kick
+
+Enemy: Water Undead Assassin
+Requirements: Light Vitality, Instantaneous Step, Dancing Air, Full Kung Fu, Endless Magic
+
+Enemy: Ice Skeleton Beast
+Requirements: Loud Pyromancy, Flying Height, Dancing Attunement, Disgusting Resistance, Smart Step
+
+Enemy: Fire Centipede Demon
+Requirements: Tough Kick, Full Resistance, Heavy Pace, Impenetrable Hands, Smart Pyromancy
+
+Enemy: Iron Cragspider
+Requirements: Good Necromancy, Bad Hands, Good Humanity, Small Sprint, Flying Fire
+
+Enemy: Lightning Undead Crystal Soldier
+Requirements: Instantaneous Defense, Melodic Kung Fu, Endless Kick, Smart Height, Sharp Level
+
+Enemy: Lightning Hollows
+Requirements: Smart Earth, Sharp Kung Fu, Endless Pace, Light Step, Illusionary Height
+
+Enemy: Blood Phalanx
+Requirements: Small Faith, Big Agility, Huge Sprint, Low Wings, Quiet Level
+
+Enemy: Air Parasitic Wall Hugger
+Requirements: Powerful Endurance, Rusted Head, Hot Air, Eternal Jump, Low Sprint
+
+Enemy: Air Gaping Dragon
+Requirements: Impenetrable Intelligence, Quiet Attack, Small Attack, Silent Youth, Large Endurance
+
+Enemy: Earth Other
+Requirements: Bad Iai, Dancing Sprint, Sharp Voice, Instantaneous Kung Fu, Fast Attunement
+
+Enemy: Fire Giants
+Requirements: Swift Necromancy, High Teleportation, Slow Mind, Full Feet, Slow Attunement
+
+Enemy: Earth Oolacile Resident
+Requirements: Eternal Kung Fu, Big Magic, Cool Magic, Illusionary Magic, High Faith
+
+Enemy: Fire Oolacile Resident
+Requirements: Silent Wings, Dancing Earth, Troubled Faith, Dancing Mind, Loud Resistance
+
+Enemy: Air Royal Sentinel
+Requirements: Illusionary Jump, Low Attack, Full Dexterity, Troubled Fire, Skilled Necromancy
+
+Enemy: Fire Skeleton
+Requirements: Circular Combo, Impressive Air, Troubled Strength, Loud Sprint, Low Fire
+
+Enemy: Fire Blowdart Sniper
+Requirements: Impressive Level, Full Iai, Disgusting Attack, Powerful Necromancy, Hot Endurance
+
+Enemy: Ice Minor Taurus Demon
+Requirements: Good Mind, Endless Height, Rusted Attunement, Disgusting Level, Light Magic
+
+Enemy: Lightning Seath The Scaleless
+Requirements: High Air, Hot Pace, Quick Wings, Fast Wings, Impenetrable Teleportation
+
+Enemy: Blood Chaos Bug
+Requirements: Heavy Kick, Flying Magic, Low Swim, Light Pace, Low Mind
+
+Enemy: Water Sewer Rat
+Requirements: Impenetrable Intelligence, Flying Feet, Tough Step, Impenetrable Attunement, Flying Vitality
+
+Enemy: Iron Nito
+Requirements: Acrobatic Level, Melodic Youth, High Attunement, Full Water, Melodic Strength
+
+Enemy: Earth Oolacile Sorceress
+Requirements: Troubled Strength, Slow Pace, Small Air, Sharp Air, Quiet Kung Fu
+
+Enemy: Ice Undead Crystal Archer
+Requirements: Flying Magic, Dancing Kung Fu, Powerful Agility, Quiet Attack, Muddy Defense
+
+Enemy: Earth Drake
+Requirements: Powerful Youth, Quick Pace, Large Defense, Troubled Attunement, Heavy Feet
+
+Enemy: Air Pisaca
+Requirements: Low Stance, Full Iai, Quiet Stance, Slow Iai, Instantaneous Magic
+
+Enemy: Fire Possessed Tree
+Requirements: Circular Step, Large Magic, Full Kung Fu, Silent Strength, Tough Agility
+
+Enemy: Air Giant Skeleton (Sword)
+Requirements: Instantaneous Kick, Sharp Step, Great Kick, Impenetrable Height, Hot Dexterity
+
+Enemy: Blood Chaos Eater
+Requirements: Troubled Weight, High Intelligence, Illusionary Kick, Flying Strength, Melodic Head
+
+Enemy: Earth Black Knight
+Requirements: Circular Vitality, Low Air, Good Humanity, Smart Step, Loud Intelligence
+
+Enemy: Lightning Moonlight Butterfly
+Requirements: Low Dexterity, Smart Attack, Muddy Fire, Smart Intelligence, Acrobatic Sprint
+
+Enemy: Ice Burrowing Rockworm
+Requirements: Large Dexterity, Full Kung Fu, Cool Defense, Powerful Swim, Full Defense
+
+Enemy: Lightning Taurus Demon
+Requirements: Heavy Jump, Bad Iai, Flying Discretion, Large Teleportation, Silent Head
+
+Enemy: Iron Four Kings
+Requirements: Sharp Swim, Large Water, Endless Kung Fu, Light Sprint, Small Fire
+
+Enemy: Water Darkwraith Knight
+Requirements: Low Head, Smart Humanity, Quiet Attack, Quiet Teleportation, Eternal Combo
+
+Enemy: Air Undead Crystal Archer
+Requirements: Loud Level, Melodic Step, Good Earth, Circular Kick, Silent Combo
+
+Enemy: Air Crystal Lizard
+Requirements: Swift Head, Swift Attunement, Big Stance, Quiet Hands, Thick Attunement
+
+Enemy: Blood Giant Leech
+Requirements: Silent Mind, Impressive Defense, Skilled Pyromancy, Melodic Combo, Impressive Swim
+
+Enemy: Lightning Sentinel
+Requirements: High Head, Great Teleportation, Fast Teleportation, Smart Agility, Powerful Faith
+
+Enemy: Fire Mass of Souls
+Requirements: Impenetrable Voice, High Head, Thick Defense, Fast Intelligence, Good Discretion
+
+Enemy: Water Basilisk
+Requirements: Skilled Agility, High Teleportation, Light Head, Bad Necromancy, Smart Height
+
+Enemy: Earth Asylum Demon
+Requirements: Cool Attack, Slow Hands, Skilled Humanity, Eternal Sprint, Small Teleportation
+
+Enemy: Blood Pyromancer
+Requirements: Eternal Youth, Silent Attack, Full Faith, Endless Endurance, Powerful Swim
+
+Enemy: Iron Chaos Witch Quelaag
+Requirements: Smart Pace, Great Mind, Thick Stance, Light Voice, Illusionary Intelligence
+
+Enemy: Water Ceaseless Discharge
+Requirements: Swift Level, Sharp Iai, Impressive Vitality, Hot Height, Endless Endurance
+
+Enemy: Earth Wildlife
+Requirements: Heavy Swim, Muddy Wings, Low Kung Fu, Illusionary Resistance, Rusted Vitality
+
+Enemy: Earth Giants
+Requirements: Slow Feet, Illusionary Wings, Swift Swim, Illusionary Strength, Swift Teleportation
+
+Enemy: Lightning Giant
+Requirements: Silent Kick, Smart Wings, Muddy Earth, High Swim, Flying Fire
+
+Enemy: Earth Undead Mage
+Requirements: Huge Step, Loud Discretion, Loud Charisma, Thick Fire, High Swim
+
+Enemy: Earth Silver Knight
+Requirements: Full Resistance, Bad Combo, Skilled Swim, Small Dexterity, Full Vitality
+
+Enemy: Blood Chaos Witch Quelaag
+Requirements: Tough Mind, Eternal Stance, Impenetrable Wings, Melodic Water, High Vitality
+
+Enemy: Ice Minor Capra Demon
+Requirements: Fast Necromancy, Dancing Jump, Heavy Resistance, Troubled Level, Smart Air
+
+Enemy: Earth Ceaseless Discharge
+Requirements: Heavy Dexterity, High Hands, Tough Head, Light Defense, Quick Jump
+
+Enemy: Water Undead Crystal Soldier
+Requirements: Full Resistance, Endless Air, Melodic Air, Cool Strength, Thick Height
+
+Enemy: Blood Oolacile Sorceress
+Requirements: Dancing Attack, Circular Defense, Hot Combo, Flying Agility, Impressive Swim
+
+Enemy: Fire Minor Capra Demon
+Requirements: Tough Kick, Endless Teleportation, Troubled Faith, Skilled Sprint, Huge Level
+
+Enemy: Iron Flaming Attack Dog
+Requirements: Eternal Pace, Slow Resistance, Illusionary Iai, Full Hands, Flying Resistance
+
+Enemy: Air Demon Firesage
+Requirements: Heavy Dexterity, Melodic Swim, Eternal Level, Flying Hands, Swift Step
+
+Enemy: Fire Smough
+Requirements: Fast Endurance, Slow Mind, Good Discretion, Acrobatic Voice, Disgusting Resistance
+
+Enemy: Blood Pinwheel
+Requirements: Heavy Dexterity, Good Resistance, Dancing Necromancy, Instantaneous Agility, Impressive Earth
+
+Enemy: Water Slime
+Requirements: Low Kick, Swift Defense, Troubled Level, Eternal Strength, Circular Pyromancy
+
+Enemy: Air Giant Leech
+Requirements: Quick Voice, Low Attack, Skilled Wings, Large Necromancy, Bad Voice
+
+Enemy: Blood Darkwraith Knight
+Requirements: Light Strength, Loud Discretion, Acrobatic Charisma, Swift Step, Smart Air
+
+Enemy: Blood Demon Firesage
+Requirements: Eternal Faith, Troubled Voice, Instantaneous Dexterity, Big Fire, Tough Youth
+
+Enemy: Iron Snow Rat
+Requirements: Bad Charisma, Swift Stance, Quiet Dexterity, Circular Agility, Hot Mind
+
+Enemy: Fire Pinwheel Servant
+Requirements: High Teleportation, Troubled Teleportation, Light Teleportation, Instantaneous Agility, Flying Faith
+
+Enemy: Blood Other
+Requirements: Acrobatic Stance, Small Intelligence, Loud Mind, Endless Kick, Endless Charisma
+
+Enemy: Air Black Knight
+Requirements: Impressive Attunement, Heavy Sprint, Hot Magic, Loud Stance, Skilled Kung Fu
+
+Enemy: Lightning Tree Lizard
+Requirements: Skilled Voice, Powerful Water, Quiet Kick, Skilled Sprint, High Charisma
+
+Enemy: Blood Giant Skeleton (Bow)
+Requirements: Loud Iai, Cool Humanity, Cool Voice, Illusionary Hands, Heavy Feet
+
+Enemy: Iron Vagrants
+Requirements: Powerful Pace, Big Head, Endless Teleportation, Slow Fire, Eternal Necromancy
+
+Enemy: Fire Chaos Bug
+Requirements: Instantaneous Necromancy, Eternal Pyromancy, Eternal Humanity, Low Height, Dancing Level
+
+Enemy: Fire Tree Lizard
+Requirements: Great Air, Large Pace, Large Level, Disgusting Attack, Swift Teleportation
+
+Enemy: Water Treant Gardener
+Requirements: Hot Pace, Swift Agility, Quiet Pace, Fast Hands, Powerful Necromancy
+
+Enemy: Earth Crystal Golem
+Requirements: Huge Iai, Huge Attunement, Slow Head, Cool Endurance, Rusted Charisma
+
+Enemy: Water Taurus Demon
+Requirements: Small Voice, Troubled Discretion, Slow Mind, Instantaneous Air, Acrobatic Teleportation
+
+Enemy: Ice Gwyn Lord of Cinder
+Requirements: Silent Voice, Muddy Defense, Circular Pyromancy, Flying Pace, Small Endurance
+
+Enemy: Lightning Wisp
+Requirements: Silent Magic, Big Earth, Impenetrable Sprint, Sharp Hands, Bad Wings
+
+Enemy: Iron Pinwheel
+Requirements: Good Vitality, Powerful Discretion, Instantaneous Weight, Thick Dexterity, Muddy Height
+
+Enemy: Blood Drake
+Requirements: Hot Kick, Powerful Level, Skilled Strength, Hot Charisma, Great Wings
+
+Enemy: Water Pisaca
+Requirements: Slow Youth, Smart Attack, Slow Dexterity, Endless Dexterity, Endless Fire
+
+Enemy: Ice Great Grey Wolf Sif
+Requirements: Silent Kick, Circular Intelligence, Sharp Humanity, Thick Wings, Swift Discretion
+
+Enemy: Earth Gwyn Lord of Cinder
+Requirements: Hot Wings, Great Head, Hot Step, Big Feet, Full Height
+
+Enemy: Air Serpent Mage
+Requirements: Circular Intelligence, Skilled Water, Hot Faith, Sharp Level, Low Vitality
+
+Enemy: Ice Darkmoon Soldiers
+Requirements: Impenetrable Head, Cool Teleportation, Silent Strength, Skilled Pyromancy, Heavy Iai
+
+Enemy: Earth Blowdart Sniper
+Requirements: Small Kung Fu, Rusted Youth, Disgusting Head, Hot Step, Good Weight
+
+Enemy: Blood Bell Gargoyle
+Requirements: Illusionary Attunement, Tough Jump, Large Teleportation, Thick Defense, Powerful Height
+
+Enemy: Water Infested Barbarian with club
+Requirements: Huge Stance, Light Mind, Disgusting Feet, Eternal Intelligence, Great Faith
+
+Enemy: Blood Asylum Demon
+Requirements: Muddy Faith, Muddy Earth, Huge Attack, Flying Mind, Troubled Humanity
+
+Enemy: Iron Crystal Lizard
+Requirements: Illusionary Pace, Disgusting Voice, Eternal Jump, Impenetrable Pace, Huge Discretion
+
+Enemy: Lightning Great Stone Knight
+Requirements: Thick Necromancy, Endless Feet, Impenetrable Feet, Fast Teleportation, Quick Attack
+
+Enemy: Iron Bone Tower
+Requirements: Hot Feet, Huge Resistance, Large Air, Instantaneous Mind, Bad Voice
+
+Enemy: Iron Giant Skeleton (Bow)
+Requirements: Huge Strength, Circular Wings, Rusted Agility, Big Level, Cool Intelligence
+
+Enemy: Ice Seath The Scaleless
+Requirements: Troubled Agility, Small Dexterity, Fast Attunement, Disgusting Intelligence, Illusionary Earth
+
+Enemy: Ice Pinwheel
+Requirements: Circular Charisma, Large Voice, Rusted Humanity, Loud Combo, Disgusting Defense
+
+Enemy: Blood Pinwheel Servant
+Requirements: Cool Head, Rusted Attunement, Thick Iai, Powerful Weight, Big Strength
+
+Enemy: Blood Torch Zombie
+Requirements: Silent Humanity, Impenetrable Head, Flying Feet, Thick Pace, Illusionary Voice
+
+Enemy: Air Zombie
+Requirements: Light Vitality, Thick Necromancy, Heavy Swim, Low Attack, Good Dexterity
+
+Enemy: Air Mimic
+Requirements: Impenetrable Humanity, Illusionary Sprint, Cool Feet, Thick Hands, Impressive Faith
+
+Enemy: Iron Giant Humanity
+Requirements: Disgusting Swim, Big Stance, Illusionary Agility, Quick Height, High Resistance
+
+Enemy: Water Ornstein
+Requirements: Acrobatic Air, Impenetrable Faith, Silent Charisma, Loud Humanity, Circular Sprint
+
+Enemy: Fire Hollowed Asylum Knight
+Requirements: Eternal Vitality, Huge Step, Big Pyromancy, Sharp Kick, Silent Intelligence
+
+Enemy: Iron Undead Mage
+Requirements: Rusted Height, Huge Endurance, Quick Dexterity, Dancing Faith, Great Feet
+
+Enemy: Lightning Wheel Skeleton
+Requirements: Tough Endurance, Silent Dexterity, Fast Endurance, Full Earth, Good Stance
+
+Enemy: Air Ceaseless Discharge
+Requirements: Fast Charisma, Good Jump, Low Combo, Dancing Defense, High Resistance
+
+Enemy: Earth Stray Demon
+Requirements: Swift Stance, Bad Faith, Dancing Attack, Full Pace, Quiet Vitality
+
