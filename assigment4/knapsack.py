@@ -8,7 +8,6 @@ from search import *
 class Knapsack(Problem):
     max_size=0
     number=0
-    sumUtility=0
     
     def __init__(self,path):
         objects=self.createMap(path)
@@ -81,10 +80,8 @@ class Knapsack(Problem):
                     if len(char)>0:
                         object.append(int(char))
                 allObjects.append(tuple(object))
-                sum+=object[2]
                 
-        self.sumUtility=sum
-        allObjects=sorted(allObjects, key=lambda obj: obj[2])
+        allObjects=sorted(allObjects, key=lambda obj: obj[1])
         return allObjects
 
     def createSleigh(self,allObjects):

@@ -35,8 +35,8 @@ class LSNode:
 
 def max_value(problem, limit=100, callback=None):
     def getBest(current):
-        maxValue=0
-        maxNode=''
+        maxValue=current.value()
+        maxNode=current
         for elem in list(current.expand()):
             if elem.value() > maxValue:
                 maxValue=elem.value()
