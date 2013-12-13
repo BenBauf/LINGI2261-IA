@@ -12,11 +12,8 @@ class Knapsack(Problem):
     def __init__(self,path):
         objects=self.createMap(path)
         self.createSleigh(objects)
-        #self.initial=('init',((),self.allObjects,(0,0)))
         
     def successor(self, state):
-        if(state[0]=='init'):
-            state=state[1]
         available=state[1]
         utility , weight=state[2]
         #add
@@ -54,8 +51,6 @@ class Knapsack(Problem):
 
     
     def value(self,state):
-        if(state[0]=='init'):
-            state=state[1]
         if(len(state[0]) is 0):
             return 0
         return state[2][0]
@@ -64,7 +59,6 @@ class Knapsack(Problem):
     #read the file, create the list and code it for the state schema
     def createMap(self,path):
         allObjects=[]
-        sum=0
         
         f = open(path,'r')
         ligne=-1
@@ -80,7 +74,6 @@ class Knapsack(Problem):
                     if len(char)>0:
                         object.append(int(char))
                 allObjects.append(tuple(object))
-                
         allObjects=sorted(allObjects, key=lambda obj: obj[1])
         return allObjects
 
@@ -100,5 +93,5 @@ class Knapsack(Problem):
                 break              
 
         
-        self.initial=('init',(sleigh,available,(utility,weight)))
+        self.initial=(sleigh,available,(utility,weight))
          
