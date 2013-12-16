@@ -20,17 +20,17 @@
 \hline
 \multicolumn{2}{|c|}{Level} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
 \hline
-\multirow{3}{0.5cm} {Rw} & Time & 627 & 185 & 178 & 244 & 316 & 294 & 347 & 471& 404& 450\\
-& Value & 56.109 & 12.248 & 10.541 & 23.446 & 24.190 & 33.748 & 33.402 & 37.603& 50.836 & 49.428\\
-& Steps & 72 & 66 & 61 & 9 & 73 & 86 & 18 & 24 & 74 & 9\\
+\multirow{3}{0.5cm} {Rw} & Time & 627 & 208 & 211 & 269 & 338 & 341 & 498 & 384 & 452 & 505\\
+& Value & 57.944 & 12.501 & 13.041 & 22.776 & 23.671 & 33.042 & 32.925 & 37.984 & 49.851 & 48.092\\
+& Steps & 75 & 86 & 92 & 6 & 16 & 33 & 14 & 2 & 21 & 2\\
 \hline
-\multirow{3}{0.5cm} {Mv} & Time & 201 & 124 & 124 & 147 & 173 & 150 & 178 & 217 & 175 & 213\\
-& Value & 58.619 & 12.273 & 14.359 & 24.535 & 25.512 & 33.855 & 36.505 & 41.051 & 52.429 & 52.313\\
-& Steps & 5 & 5 & 8 & 4 & 6 & 8 & 9 & 10 & 7 & 7\\
+\multirow{3}{0.5cm} {Mv} & Time & 201 & 124 & 117 & 147 & 173 & 150 & 171 & 173 & 160 & 213\\
+& Value & 59.397 & 10.376 & 11.322 & 24.158 & 23.613 & 30.813 & 32.961 & 38.102 & 50.472 & 52.313\\
+& Steps & 1 & 1 & 1 & 1 & 1 & 2 & 2 & 1 & 2 & 2\\
 \hline
-\multirow{3}{0.65cm} {Rmv} & Time & 214 & 132 & 132 & 142 & 169 &  156 & 179 & 219 & 184 & 224\\
-& Value & 62.124 & 14.888 & 15.283 & 24.704 & 33.748 & 33.855 & 37.885 & 42.315 & 54.694& 53.328\\
-& Steps & 21 & 68 & 14 & 31 & 86 & 22 & 43 & 60 & 41& 39\\
+\multirow{3}{0.65cm} {Rmv} & Time & 245 & 132 & 136 & 142 & 169 &  156 & 179 & 204 & 175 & 219\\
+& Value & 62.124 & 15.235 & 15.283 & 24.704 & 25.950 & 33.855 & 37.885 & 40.695 & 52.271 & 52.548\\
+& Steps & 32 & 49 & 20 & 56 & 22 & 34 & 17 & 25 & 38 & 16\\
 \hline
 \end{tabular}
 \begin{description}
@@ -39,12 +39,18 @@
 \item[Question 4]: Answer the following questions :
 \begin{enumerate}[(a)]
 \item What is the best strategy ?\\
-
+The best strategy is \textsc{Randomized\_Maxvalue}.
 \item Why do you think the best strategy beats the other ones ?\\
-
+This strategy beats the other ones because it has less chances to reach a local optimum or to fall in bad branch.
 \item What are the limitations of each strategy in terms of diversification and intensification ?\\
+\begin{description}
+\item[Randomwalk]: this strategy will search search in all successors. It's an advantage in terms of diversification. In terms of intensification, \textsc{RandomWalk} is very bad because it doesn't choose in particular branch to go deeper. 
+\item[MaxValue]: this strategy is the best in terms of intensification. It will choose a branch to go deeper in and will not try to reach other  successors. It will a local optimum but the absolute one. 
+\item[Randomized\_Maxvalue]: this strategy does a compromise between diversification and intensification. It has less chance to find a local optimum than \textsc{MaxValue} and more chance to find a maximum than \textsc{RandomWalk}.
+\end{description}
 
 \item What is the behaviour of the different techniques when they fall in a local optimum ?\\
+\textsc{RandomWalk} doesn't make any difference between being in a local optimum or not. \textsc{Maxvalue} is stuck in this local optimum. \textsc{Randomized\_Maxvalue} has a few possibilities to avoid to be stuck in the local optimum. It is still less likely to fall in one.
 
 \end{enumerate}
 \end{description}
